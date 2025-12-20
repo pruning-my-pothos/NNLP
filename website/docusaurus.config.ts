@@ -9,8 +9,8 @@ const config: Config = {
   url: 'https://pruning-my-pothos.github.io',
   baseUrl: '/NNLP/',
   trailingSlash: false,
-  organizationName: 'nnlp',
-  projectName: 'nnlp',
+  organizationName: 'pruning-my-pothos',
+  projectName: 'NNLP',
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
