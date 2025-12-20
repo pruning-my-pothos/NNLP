@@ -26,9 +26,10 @@ pages-build:
 pages-serve:
 	cd website && npm run serve
 
-# Deploy to GitHub Pages (configure repo in docusaurus.config.ts before using)
+# Deploy to GitHub Pages via GitHub Actions (no local gh-pages branch needed)
 pages-deploy:
-	cd website && GIT_USER=git USE_SSH=1 npm run deploy
+	cd website && npm run build
+	@echo "Build finished. Push main to trigger the GitHub Pages workflow (see .github/workflows/pages.yml)."
 
 # Show git status
 status:

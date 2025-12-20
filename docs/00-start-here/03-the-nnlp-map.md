@@ -66,7 +66,7 @@ flowchart TB
 | **Professional Scenarios**   | How does this work end-to-end?        | `../05-professional-scenarios/00-scenarios-index.md`                                          |
 | **Templates**                | What can I copy and adapt quickly?    | `../09-templates/00-templates-index.md`                                                       |
 | **Evaluation & Guardrails**  | How do we stay safe and accountable?  | `../07-guardrails-and-governance/guardrails-index.md`, `../08-evaluation/00-eval-overview.md` |
-| **Experiments**              | What happened in practice?            | `../../experiments/README.md`                                                                 |
+| **Experiments**              | What happened in practice?            | External: [Experiments (repo)](https://github.com/pruning-my-pothos/NNLP/tree/main/experiments) |
 
 ---
 
