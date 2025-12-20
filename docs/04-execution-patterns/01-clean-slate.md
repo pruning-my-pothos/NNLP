@@ -1,0 +1,98 @@
+---
+title: "Pattern: The Clean Slate"
+archetype: "pattern"
+status: "active"
+owner: "Shailesh (Shaily)"
+maintainer: "Shailesh (Shaily)"
+version: "0.1.0"
+tags: ["nnlp", "pattern", "creation", "greenfield"]
+last_reviewed: "2025-12-20"
+---
+
+# Pattern: The Clean Slate
+
+:::info[Value Proposition]
+Use this pattern when building a new module, component, or service from scratch. It ensures the AI builds exactly what you need without legacy baggage.
+:::
+
+## Overview
+
+Generating code from zero is AI's "Happy Path." However, without structure, it produces generic, unmaintainable tutorial code.
+
+**Goal**: Generate production-ready scaffolding and logic in one pass.
+**Anti-pattern**: "Write a snake game." (Result: Spaghetti code in one file).
+
+---
+
+## When to Use
+
+| ✅ Use This Pattern When...    | 🚫 Do Not Use When...              |
+| :----------------------------- | :--------------------------------- |
+| You need a new React component | You are modifying a 500-line class |
+| You need a new API endpoint    | You are debugging a race condition |
+| You need a SQL schema          | You are migrating data             |
+
+---
+
+## Prerequisites
+
+:::warning[Before you start]
+You must have the **Constraint Spec** ready. Without it, the AI will pick random libraries.
+:::
+
+- **Artifacts**: Intent Spec, Constraint Spec.
+- **Context**: Knowledge of where the file will live in the repo.
+
+---
+
+## The Pattern (Step-by-Step)
+
+### Step 1: Define the Interface
+
+Don't ask for the code yet. Ask for the **Type Definition** or **Interface**.
+
+> "Based on the Intent Spec, generate the TypeScript interface for the `UserService`. Do not generate the implementation yet."
+
+_Why? This forces the model to plan the public API before getting lost in logic._
+
+### Step 2: The Scaffold
+
+Generate the file structure with comments, but no logic.
+
+> "Generate the file skeleton. Include all imports and method signatures, but use `// TODO` for the bodies."
+
+### Step 3: The Implementation
+
+Now fill it in, constrained by your specs.
+
+> "Now implement the methods. Adhere to the Constraint Spec regarding error handling and logging."
+
+```mermaid
+flowchart LR
+    A[Interface] --> B[Scaffold]
+    B --> C[Implementation]
+
+    classDef step fill:#E6F7FF,stroke:#1B75BB,color:#0F1F2E;
+    class A,B,C step;
+```
+
+---
+
+## Example Scenario
+
+- **Context**: Creating a new `Button` component.
+- **Input**: Constraint Spec (Tailwind, CVA, TypeScript).
+- **Output**: A fully typed, accessible button with variant support.
+
+---
+
+## Common Pitfalls
+
+| Pitfall                 | Impact                         | Correction                              |
+| :---------------------- | :----------------------------- | :-------------------------------------- |
+| **The "One Shot"**      | Asking for everything at once. | Split Interface vs. Implementation.     |
+| **The "Generic Style"** | AI uses `var` or old patterns. | Enforce "Modern Syntax" in Constraints. |
+
+:::danger[Critical Risk]
+Do not accept code that introduces new npm packages unless you explicitly approved them.
+:::

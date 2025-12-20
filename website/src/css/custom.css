@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ifm-font-family-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    --ifm-heading-font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+
+  [data-theme="dark"] {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-size: 17px;
+}
+
+.navbar {
+  border-bottom-width: 1px;
+  border-color: hsl(var(--border));
+  background-color: hsl(var(--background));
+  min-height: 60px;
+}
+
+.navbar__inner {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.navbar__items .navbar__item,
+.navbar__items .navbar__link {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.navbar__logo img {
+  height: 28px;
+  width: auto;
+}
+
+.footer {
+  background-color: hsl(var(--background));
+  border-top-width: 1px;
+  border-color: hsl(var(--border));
+}
+
+.menu__link--active {
+  background-color: hsl(var(--accent));
+}
+
+blockquote {
+  border-left-color: hsl(var(--border));
+  background-color: hsl(var(--accent));
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: hsl(var(--accent));
+}
+
+[data-theme='dark'] blockquote {
+  border-left-color: hsl(var(--border));
+  background-color: hsl(var(--accent));
+}
+
+/* Sidebar Styles */
+.theme-doc-sidebar-container {
+  border-right-width: 1px;
+  border-color: hsl(var(--border));
+}
+
+/* Main Content Styles */
+.prose {
+  color: hsl(var(--foreground) / 0.8);
+}
+[data-theme="dark"] .prose {
+  color: hsl(var(--foreground) / 0.8);
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: hsl(var(--foreground));
+}
+[data-theme="dark"] .prose h1,
+[data-theme="dark"] .prose h2,
+[data-theme="dark"] .prose h3,
+[data-theme="dark"] .prose h4,
+[data-theme="dark"] .prose h5,
+[data-theme="dark"] .prose h6 {
+  color: hsl(var(--foreground));
+}
+
+.prose h1 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+@media (min-width: 768px) {
+  .prose h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+}
+
+.prose h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  border-bottom-width: 1px;
+  border-color: hsl(var(--border));
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .prose h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+}
+
+.prose h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+@media (min-width: 768px) {
+  .prose h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+}
+
+.prose p,
+.prose li,
+.prose ul,
+.prose ol {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.prose a {
+  color: hsl(var(--primary));
+  text-underline-offset: 4px;
+}
+.prose a:hover {
+  text-decoration: underline;
+}
+[data-theme="dark"] .prose a {
+  color: hsl(var(--primary));
+}
+
+.prose code {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--foreground));
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+}
+[data-theme="dark"] .prose code {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--foreground));
+}
+
+.prose pre {
+  background-color: hsl(var(--accent));
+  border-width: 1px;
+  border-color: hsl(var(--border));
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+[data-theme="dark"] .prose pre {
+  background-color: hsl(var(--accent));
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.prose blockquote {
+  border-left-width: 4px;
+  border-color: hsl(var(--border));
+  padding-left: 1rem;
+}
+
+.theme-doc-markdown {
+  @apply prose;
+}
+
+.hero-gradient {
+  background: radial-gradient(at top left, hsl(var(--primary) / 0.1), transparent 50%),
+              radial-gradient(at bottom right, hsl(var(--secondary) / 0.1), transparent 50%);
+}
+
+/* Admonition Styles */
+.admonition {
+  border-left-width: 4px;
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.admonition-heading {
+  font-weight: 600;
+}
+
+.admonition-note {
+  background-color: hsl(var(--accent));
+  border-color: hsl(var(--border));
+}
+
+.admonition-tip {
+  background-color: #d1fae5;
+  border-color: #10b981;
+}
+[data-theme="dark"] .admonition-tip {
+  background-color: #052e16;
+}
+
+.admonition-info {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+}
+[data-theme="dark"] .admonition-info {
+  background-color: #1e3a8a;
+}
+
+.admonition-warning {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+[data-theme="dark"] .admonition-warning {
+  background-color: #78350f;
+}
+
+.admonition-danger {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+}
+[data-theme="dark"] .admonition-danger {
+  background-color: #7f1d1d;
+}

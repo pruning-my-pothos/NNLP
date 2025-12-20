@@ -1,0 +1,12 @@
+flowchart LR
+    L[Logic] --> R[Reliable Outcomes]
+    Lang[Language] --> R
+    S[Systems] --> R
+    Sent[Sentences] --> R
+    R --> Confidence[Confidence Up]
+    R --> Risk[Risk Down]
+
+    classDef skill fill:#F0F5FF,stroke:#1B75BB,color:#0F1F2E;
+    classDef outcome fill:#E8F5E9,stroke:#2F855A,color:#0F2A1F;
+    class L,Lang,S,Sent skill;
+    class R,Confidence,Risk outcome;

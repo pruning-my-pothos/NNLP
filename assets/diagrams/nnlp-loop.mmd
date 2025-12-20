@@ -1,0 +1,12 @@
+flowchart LR
+    A[Discovery Brief] --> B[Intent Spec]
+    B --> C[Constraint Spec]
+    C --> D[Delegation Contract]
+    D --> E[Generation Request]
+    E --> F[Review & Interrogation]
+    F --> G[Acceptance Criteria]
+    G --> H[Iteration / Versioning]
+    H --> A
+
+    classDef focus fill:#E6F7FF,stroke:#1B75BB,color:#0F1F2E;
+    class A,B,C,D,E,F,G,H focus;
