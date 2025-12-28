@@ -6,7 +6,7 @@ const sidebars = {
       label: '00 Standard',
       collapsed: false,
       items: [
-        '00-start-here/00-what-is-nnlp',
+        '00-start-here/00-introduction',
         '00-start-here/06-scope-and-applicability',
         '00-start-here/07-prerequisites-and-entry-criteria',
         '03-nnlp-method/10-accountability-and-delegation',

@@ -69,7 +69,7 @@ const config: Config = {
         src: 'img/nnlp-logo.svg',
       },
       items: [
-        {type: 'doc', docId: '00-start-here/00-what-is-nnlp', label: 'Start Here', position: 'left'},
+        {type: 'doc', docId: '00-start-here/00-introduction', label: 'Start Here', position: 'left'},
         {type: 'doc', docId: '01-core-skills/00-core-skills-overview', label: 'Core Skills', position: 'left'},
         {type: 'doc', docId: '03-nnlp-method/00-the-nnlp-loop', label: 'NNLP Method', position: 'left'},
         {type: 'doc', docId: '09-templates/00-templates-index', label: 'Templates', position: 'left'},
