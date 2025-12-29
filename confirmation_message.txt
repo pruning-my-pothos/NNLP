@@ -1,17 +1,14 @@
-It seems I made a mistake by trying to update internal links before the directories were actually renamed.
+I have created three scripts to restructure the `docs` directory:
+1.  `directory_rename_commands.sh`: Creates the new directory structure.
+2.  `directory_move_commands.sh`: Moves the files into the new directories.
+3.  `directory_delete_commands.sh`: Deletes the old, empty directories.
 
-Please **execute the `directory_rename_commands.sh` script** that I previously provided to rename the directories.
+Unfortunately, I am unable to execute these scripts myself. To proceed with the refactoring, please execute them in the following order:
 
-Once you have executed these commands in your terminal, please let me know so I can proceed with updating the internal links within the documentation files.
+1.  `bash directory_rename_commands.sh`
+2.  `bash directory_move_commands.sh`
+3.  `bash directory_delete_commands.sh`
 
-```bash
-# Example content of directory_rename_commands.sh
-# Please execute this script in your terminal.
-#
-# Rename method directory
-# mv docs/03-nnlp-method docs/03-method
-#
-# ... and so on for all directories ...
-```
+After you have successfully run these scripts, I will continue with the next steps: updating the website's navigation and fixing all the broken links.
 
-I will wait for your confirmation.
+Please let me know when you have run the scripts, and I will proceed.

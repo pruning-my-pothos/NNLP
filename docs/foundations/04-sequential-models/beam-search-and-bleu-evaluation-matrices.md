@@ -1,0 +1,134 @@
+---
+title: "Beam Search and BLEU Evaluation Metrics"
+description: "Explore advanced decoding strategies like Beam Search for generating high-quality sequences and understand the BLEU metric for evaluating the quality of machine-generated text in sequence-to-sequence tasks."
+sidebar_position: 6
+---
+
+# Beam Search and BLEU Evaluation Metrics
+
+:::info[Generating Better, Measuring Better]
+This section tackles two fundamental questions in sequence generation:
+1.  **How can we generate better text?** Instead of just picking the most obvious next word every time, can we find a more optimal overall sentence? This is what **Beam Search** aims to do.
+2.  **How do we measure "better"?** How can we automatically score the quality of a machine-generated sentence? This is the problem that metrics like **BLEU** try to solve.
+:::
+
+When an [Encoder-Decoder Model](./encoder-decoder-model.md) (or any sequence generation model, including LLMs) generates text, it typically predicts one token at a time. The naive approach is to always pick the token with the highest probability at each step (greedy decoding). However, this often leads to suboptimal sequences. This section introduces **Beam Search**, a more sophisticated decoding strategy, and **BLEU (Bilingual Evaluation Understudy)**, a widely used metric for evaluating the quality of machine-generated text.
+
+## Beam Search: Beyond Greedy Decoding
+
+### The Problem with Greedy Decoding
+
+Greedy decoding selects the word with the highest probability at each step.
+
+*   **Example**: If the model predicts "I" (0.9), "want" (0.8), "to" (0.7), "go" (0.6), "home" (0.5), it would construct "I want to go home".
+*   **Limitation**: This approach is short-sighted. A word that has a high probability *now* might lead to a poor overall sequence later. It doesn't explore alternative paths.
+
+### How Beam Search Works
+
+:::tip[Analogy: Exploring Side Roads]
+*   **Greedy Search** is like driving and always taking the road that looks widest and straightest right in front of you, without considering where it leads. You might end up in a dead end.
+*   **Beam Search** is like pausing at a fork, looking down a few of the most promising side roads for a short distance, and then choosing the one that seems to lead to the best overall destination. It's a balance between exploration and efficiency.
+:::
+
+1.  **Initialize**: At the first decoding step, it selects the top `k` (beam width) most probable words as candidates.
+2.  **Expand**: For each of these `k` candidates, it generates the next possible words and calculates the probability of the entire sequence up to that point.
+3.  **Prune**: From all the newly generated sequences, it again selects the top `k` most probable sequences to carry forward.
+4.  **Repeat**: This process continues until an end-of-sequence token is generated or the maximum sequence length is reached.
+
+**Actionable Insight**: Beam Search significantly improves the quality of generated sequences compared to greedy decoding by exploring a wider range of possibilities. A larger `k` (beam width) leads to better quality but higher computational cost.
+
+**Visual Suggestion**: A tree diagram showing the top `k=2` words at step 1, then expanding each to its top `k=2` next words at step 2, and showing how only the overall top `k` paths are retained.
+
+```mermaid
+graph TD
+    start[START] --> w1a(word1_a P=0.5)
+    start --> w1b(word1_b P=0.4)
+    start --> w1c(word1_c P=0.1)
+
+    w1a --> w2aa(word2_aa P=0.5*0.9)
+    w1a --> w2ab(word2_ab P=0.5*0.8)
+    w1b --> w2ba(word2_ba P=0.4*0.7)
+    w1b --> w2bb(word2_bb P=0.4*0.6)
+
+    subgraph Step 1 (Beam k=2)
+        direction LR
+        w1a
+        w1b
+    end
+
+    subgraph Step 2 (Beam k=2)
+        direction LR
+        w2aa
+        w2ba
+    end
+
+    style w1c fill:#FFD700,stroke:#DAA520,color:#000000
+    style w2ab fill:#FFD700,stroke:#DAA520,color:#000000
+    style w2bb fill:#FFD700,stroke:#DAA520,color:#000000
+```
+
+## BLEU (Bilingual Evaluation Understudy) Score
+
+:::warning[BLEU Doesn't Understand Meaning]
+It is critical to remember that **BLEU is a "dumb" metric**. It only checks for overlapping words and phrases.
+*   **Good sentence, low score**: A human translation might be `The feline relaxed on the rug.` If the reference is `The cat sat on the mat,` the BLEU score will be low, even though the meaning is identical.
+*   **Bad sentence, high score**: A machine might generate `the the the cat sat on mat.` This has high n-gram overlap but is nonsensical.
+BLEU is a useful proxy for quality, but it is not a substitute for human judgment.
+:::
+
+Once a model generates a sequence, how do we evaluate its quality objectively? For tasks like machine translation or summarization, where there can be multiple correct outputs, comparing generated text to a single reference is insufficient. **BLEU** is a widely used algorithm for automatically evaluating the quality of text generated by machine translation systems.
+
+### How BLEU Works
+
+BLEU compares `n-grams` (contiguous sequences of $n$ items from text) of the candidate text against the `n-grams` of one or more reference texts.
+
+1.  **N-gram Precision**: It calculates the precision of 1-grams, 2-grams, 3-grams, and 4-grams (commonly) between the candidate text and the reference translations.
+    *   `Precision = (Number of matching n-grams) / (Total number of n-grams in candidate)`
+2.  **Brevity Penalty**: To prevent very short translations from getting high precision scores (by only matching common short phrases), BLEU applies a penalty if the candidate translation is significantly shorter than the reference translations.
+3.  **Geometric Mean**: The precision scores for different n-grams are combined using a geometric mean.
+
+The BLEU score ranges from 0 to 1, where 1 indicates a perfect match with the reference translations.
+
+**Actionable Insight**: BLEU is a good indicator of how "human-like" a generated translation is in terms of fluency and adequacy. It's an objective and automated metric, making it valuable for quickly comparing different models or iterations.
+
+### Limitations of BLEU
+
+*   **Lack of Semantic Understanding**: BLEU is purely a lexical comparison. It doesn't understand meaning or paraphrasing. A translation that is semantically identical but uses different phrasing might score low.
+*   **Requires Multiple References**: Its accuracy improves significantly with multiple high-quality human reference translations.
+*   **Not a Human Judgment Replacement**: While correlated with human judgment, it's not a perfect substitute. It can't capture nuances like stylistic quality or creativity.
+
+### Code Example (Conceptual - Python with NLTK)
+
+```python
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+
+# Candidate translation (generated by machine)
+candidate = ['the', 'cat', 'sat', 'on', 'the', 'mat']
+
+# Reference translations (human-quality)
+reference1 = ['the', 'cat', 'is', 'on', 'the', 'mat']
+reference2 = ['there', 'is', 'a', 'cat', 'on', 'the', 'mat']
+
+# Multiple references are usually better
+list_of_references = [reference1, reference2]
+
+# Calculate BLEU score (default weights for 1-gram to 4-gram)
+# SmoothingFunction is often used for short sentences to avoid zero scores
+smooth = SmoothingFunction().method1
+score = sentence_bleu(list_of_references, candidate, weights=(0.25, 0.25, 0.25, 0.25), smoothing_function=smooth)
+
+print(f"BLEU score: {score:.4f}")
+
+# Example: If candidate matches reference1 perfectly
+perfect_candidate = ['the', 'cat', 'is', 'on', 'the', 'mat']
+perfect_score = sentence_bleu(list_of_references, perfect_candidate, weights=(0.25, 0.25, 0.25, 0.25), smoothing_function=smooth)
+print(f"Perfect BLEU score: {perfect_score:.4f}")
+```
+
+## Relevance to Generative AI and LLMs
+
+Both Beam Search and BLEU are fundamental concepts in understanding the generation and evaluation of sequences produced by LLMs. Beam Search is often employed during the inference phase of generative models to produce more coherent and high-quality outputs. BLEU (and its successors like ROUGE, METEOR) are used to benchmark the performance of generative LLMs, particularly in tasks like translation, summarization, and dialogue generation, although more sophisticated human evaluation and task-specific metrics are also crucial.
+
+## Next Steps
+
+This concludes the section on Sequential Data and RNNs. We will now move to a groundbreaking innovation that largely superseded RNNs for many advanced tasks: the **[Attention Mechanism](../05-attention-and-transformers/attention-mechanism.md)**.

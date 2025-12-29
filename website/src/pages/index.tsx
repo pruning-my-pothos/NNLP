@@ -57,7 +57,7 @@ const bestPractices = [
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title="GenAI & LLM Documentation"
+      title="GenAI & LLM Handbook"
       description="A practical guide to using Generative AI and LLMs in software development."
     >
       <main className="bg-background text-foreground">
@@ -70,24 +70,24 @@ export default function Home(): JSX.Element {
                   Version 0.1.0
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                  GenAI & LLM Documentation
+                  GenAI & LLM Handbook
                   <span className="block text-primary">
                     AI-assisted development, made practical.
                   </span>
                 </h1>
                 <p className="text-base md:text-lg leading-7 text-muted-foreground">
-                  GenAI & LLM Documentation defines how to use natural language to design, steer, and verify AI-assisted work. It formalizes intent, constraints, delegation, and evidence-based review so that outcomes remain accountable.
+                  GenAI & LLM Handbook defines how to use natural language to design, steer, and verify AI-assisted work. It formalizes intent, constraints, delegation, and evidence-based review so that outcomes remain accountable.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
                     className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                    to="/docs/00-introduction/scope-and-applicability"
+                    to="/docs/00-handbook-introduction/scope-and-applicability"
                   >
                     Get Started
                   </Link>
                   <Link
                     className="inline-flex items-center justify-center rounded-md border border-input bg-background px-5 py-2.5 text-sm font-semibold shadow-sm hover:bg-accent hover:text-accent-foreground"
-                    to="/docs/05-large-language-models-deep-dive/fundamentals/00-fundamentals-index"
+                    to="/docs/foundations/02-llm-deep-dive/fundamentals/00-fundamentals-index"
                   >
                     View Fundamentals
                   </Link>
@@ -97,7 +97,7 @@ export default function Home(): JSX.Element {
               <div className="bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 shadow-lg lg:ml-auto lg:max-w-[520px]">
                 <div className="flex items-center justify-between mb-3">
                   <div className="text-sm font-semibold text-muted-foreground">What’s inside</div>
-                  <Link className="text-primary text-sm hover:underline" to="/docs/00-introduction/standard-core">
+                  <Link className="text-primary text-sm hover:underline" to="/docs/00-handbook-introduction/standard-core">
                     View structure →
                   </Link>
                 </div>
@@ -154,7 +154,7 @@ export default function Home(): JSX.Element {
             <div className="mt-12 text-center">
               <Link
                 className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
-                to="/docs/05-large-language-models-deep-dive/fundamentals/00-fundamentals-index"
+                to="/docs/foundations/02-llm-deep-dive/fundamentals/00-fundamentals-index"
               >
                 Learn the Fundamentals
               </Link>
@@ -180,25 +180,25 @@ export default function Home(): JSX.Element {
                   label: "Start Here",
                   desc: "Core definitions and how to approach this guide",
                   icon: HomeIcon,
-                  href: "/docs/00-introduction/scope-and-applicability",
+                  href: "/docs/00-handbook-introduction/scope-and-applicability",
                 },
                 {
                   label: "GenAI & LLM Fundamentals",
                   desc: "Enough GenAI and LLM theory to avoid misuse",
                   icon: CpuChipIcon,
-                  href: "/docs/05-large-language-models-deep-dive/fundamentals/00-fundamentals-index",
+                  href: "/docs/foundations/02-llm-deep-dive/fundamentals/00-fundamentals-index",
                 },
                 {
                   label: "Execution Patterns & Scenarios",
                   desc: "Role-based application patterns",
                   icon: BriefcaseIcon,
-                  href: "/docs/04-execution-patterns/00-pattern-index",
+                  href: "/docs/02-execution-patterns/00-pattern-index",
                 },
                 {
                   label: "Guardrails & Governance",
                   desc: "Safety, quality, compliance, accountability",
                   icon: ShieldCheckIcon,
-                  href: "/docs/07-responsible-ai-and-governance/guardrails-index",
+                  href: "/docs/04-responsible-ai/guardrails-index",
                 },
                 {
                   label: "Experiments",
@@ -210,7 +210,7 @@ export default function Home(): JSX.Element {
                   label: "Templates",
                   desc: "Reference implementations of artifacts and checklists",
                   icon: DocumentDuplicateIcon,
-                  href: "/docs/09-templates/00-templates-index",
+                  href: "/docs/06-templates/00-templates-index",
                 },
               ].map((item) => (
                 <Link
@@ -244,7 +244,7 @@ export default function Home(): JSX.Element {
             </div>
             <Link
               className="text-primary font-semibold hover:underline"
-              to="/docs/00-introduction/scope-and-applicability"
+              to="/docs/00-handbook-introduction/scope-and-applicability"
             >
               Read the full Conformance Criteria →
             </Link>

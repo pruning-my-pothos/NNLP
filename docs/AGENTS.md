@@ -140,7 +140,7 @@ Agents must follow this order:
 
 ✅ Good instruction to an agent
 
-- “Create `docs/02-genai-llm-fundamentals/01-nlp-and-embeddings-enough-for-practice.md` using the repo doc template. Keep it practice-oriented. Include one Mermaid diagram. Add a short ‘How this impacts GenAI & LLM Documentation execution’ section. Do not add external links unless necessary.”
+- “Create `docs/foundations/02-llm-deep-dive/fundamentals/01-how-llms-work-enough-for-practice.md` using the repo doc template. Keep it practice-oriented. Include one Mermaid diagram. Add a short ‘How this impacts GenAI & LLM Documentation execution’ section. Do not add external links unless necessary.”
 
 ❌ Bad instruction to an agent
 
@@ -243,9 +243,9 @@ If you paste your `codex --help` output, I will convert these into exact command
 
 ## Resources & References
 
-- GenAI & LLM Documentation Method: `docs/03-nnlp-method/`
-- Guardrails: `docs/07-guardrails-and-governance/`
-- Templates: `docs/09-templates/`
+- GenAI & LLM Documentation Method: `docs/01-handbook-core-method/`
+- Guardrails: `docs/04-responsible-ai/`
+- Templates: `docs/06-templates/`
 
 ---
 
