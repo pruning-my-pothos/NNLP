@@ -39,9 +39,9 @@ The GenAI & LLM Handbook standard is comprehensive, but you don't need to read e
 -   **What is GenAI & LLM**: `docs/00-handbook-introduction/what-is-genai-llm.md` (Explains the core philosophy and approach)
 -   **Scope and Applicability**: `docs/00-handbook-introduction/scope-and-applicability.md` (Defines when to apply the GenAI & LLM Handbook)
 -   **Prerequisites and Entry Criteria**: `docs/00-handbook-introduction/prerequisites-and-entry-criteria.md` (Ensures you have the necessary skills)
--   **Accountability and Delegation**: `docs/01-handbook-core-method/10-accountability-and-delegation.md` (Clarifies human roles and responsibilities)
--   **GenAI & LLM Handbook Process Model (Loop Spec)**: `docs/01-handbook-core-method/genai-llm-loop-spec.md` (The step-by-step workflow)
--   **Artifact Contracts**: `docs/01-handbook-core-method/12-artifact-contracts.md` (Defines the outputs of each step)
+-   **Accountability and Delegation**: `docs/01-handbook-method/10-accountability-and-delegation.md` (Clarifies human roles and responsibilities)
+-   **GenAI & LLM Handbook Process Model (Loop Spec)**: `docs/01-handbook-method/genai-llm-loop-spec.md` (The step-by-step workflow)
+-   **Artifact Contracts**: `docs/01-handbook-method/12-artifact-contracts.md` (Defines the outputs of each step)
 
 ---
 

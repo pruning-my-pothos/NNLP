@@ -105,9 +105,9 @@ The GenAI & LLM Handbook helps you:
 
 The GenAI & LLM Handbook defines an 8-step iterative "Loop" that guides AI-assisted work from initial discovery to final acceptance and release. This loop is supported by core skills (Logic, Language, Systems, Sentences) and enforced by a suite of artifacts and templates.
 
--   Process specification: `docs/01-handbook-core-method/11-genai-llm-loop-spec.md`
--   Artifact contracts: `docs/01-handbook-core-method/12-artifact-contracts.md`
--   Accountability and delegation: `docs/01-handbook-core-method/10-accountability-and-delegation.md`
+-   Process specification: `docs/01-handbook-method/11-genai-llm-loop-spec.md`
+-   Artifact contracts: `docs/01-handbook-method/12-artifact-contracts.md`
+-   Accountability and delegation: `docs/01-handbook-method/10-accountability-and-delegation.md`
 
 ---
 

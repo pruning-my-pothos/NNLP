@@ -9,11 +9,11 @@ The current `docs` directory contains a mix of old and new content with conflict
 ```
 docs/
 ├── 00-handbook-introduction/       (From current /00-introduction)
-├── 01-handbook-core-method/      (From current /06-genai-project-lifecycle-and-method)
+├── 01-handbook-method/      (From current /06-genai-project-lifecycle-and-method)
 ├── 02-execution-patterns/          (From current /04-execution-patterns)
 ├── 03-professional-scenarios/      (From current /05-professional-scenarios)
-├── 04-responsible-ai/              (From current /07-responsible-ai-and-governance)
-├── 05-tooling-and-frameworks/      (From current /06-frameworks-and-tooling)
+├── 05-responsible-ai/              (From current /07-responsible-ai-and-governance)
+├── 04-tooling-and-frameworks/      (From current /06-frameworks-and-tooling)
 ├── 06-templates/                   (From current /09-templates)
 └── foundations/
     ├── 01-generative-ai-introduction/  (From current /04-generative-ai-introduction)

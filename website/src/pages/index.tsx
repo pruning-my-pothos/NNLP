@@ -198,7 +198,7 @@ export default function Home(): JSX.Element {
                   label: "Guardrails & Governance",
                   desc: "Safety, quality, compliance, accountability",
                   icon: ShieldCheckIcon,
-                  href: "/docs/04-responsible-ai/guardrails-index",
+                  href: "/docs/05-responsible-ai/guardrails-index",
                 },
                 {
                   label: "Experiments",

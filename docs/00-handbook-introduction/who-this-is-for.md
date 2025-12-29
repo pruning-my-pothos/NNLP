@@ -114,5 +114,5 @@ If this mindset aligns with how you work or how you want to work, the GenAI & LL
 
 -   **Builder / Engineer**: Learn the Core Skills and the GenAI & LLM Handbook Loop.
     -   Start with **What is GenAI & LLM**: `docs/00-handbook-introduction/what-is-genai-llm.md` (Note: Path updated)
-    -   Learn the loop: `docs/01-handbook-core-method/the-genai-llm-loop.md` (Note: Path updated)
+    -   Learn the loop: `docs/01-handbook-method/the-genai-llm-loop.md` (Note: Path updated)
 -   **Practitioner**: Pick one small, real task and apply the GenAI & LLM Handbook. That is the fastest way to see the difference.

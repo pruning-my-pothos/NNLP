@@ -40,7 +40,7 @@ The GenAI & LLM Handbook is a powerful framework, but like any sophisticated too
 Mastery of these prerequisites is critical for effective and safe GenAI & LLM Handbook adoption.
 :::
 
--   **Core Skills**: Proficiency in Logic, Language, Systems, and Sentences (as defined in the [Core Skills](/docs/01-handbook-core-method/core-skills/00-core-skills-overview) section).
+-   **Core Skills**: Proficiency in Logic, Language, Systems, and Sentences (as defined in the [Core Skills](/docs/01-handbook-method/core-skills/00-core-skills-overview) section).
 - **GenAI Literacy**: Understanding of LLM capabilities, limitations, and failure modes (e.g., hallucinations, context window limits).
 - **Domain Knowledge**: Sufficient understanding of the problem domain and technical stack.
 
@@ -64,8 +64,8 @@ If you answer "No" to any of these, pause and strengthen that area.
 
 To begin applying the GenAI & LLM Handbook effectively:
 
--   You **MUST** be able to articulate the [Intent Spec](/docs/01-handbook-core-method/intent-spec) for your task.
--   You **MUST** be able to define the [Constraint Spec](/docs/01-handbook-core-method/constraint-spec) for your task.
+-   You **MUST** be able to articulate the [Intent Spec](/docs/01-handbook-method/intent-spec) for your task.
+-   You **MUST** be able to define the [Constraint Spec](/docs/01-handbook-method/constraint-spec) for your task.
 -   You **MUST** understand the need for evidence-based verification.
 -   You **MUST** accept full accountability for the outcome of AI-assisted work.
 

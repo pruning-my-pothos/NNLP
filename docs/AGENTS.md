@@ -243,8 +243,8 @@ If you paste your `codex --help` output, I will convert these into exact command
 
 ## Resources & References
 
-- GenAI & LLM Documentation Method: `docs/01-handbook-core-method/`
-- Guardrails: `docs/04-responsible-ai/`
+- GenAI & LLM Documentation Method: `docs/01-handbook-method/`
+- Guardrails: `docs/05-responsible-ai/`
 - Templates: `docs/06-templates/`
 
 ---

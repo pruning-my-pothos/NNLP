@@ -1,20 +1,20 @@
 ---
-title: "GenAI & LLM Documentation: Nuanced Natural Language Programming"
+title: "GenAI & LLM Handbook: Nuanced Natural Language Programming"
 tags: ["genai-llm", "llm", "natural-language-programming", "systems-thinking", "technical-writing", "evaluation", "governance"]
 ---
 
-# GenAI & LLM Documentation: Nuanced Natural Language Programming
+# GenAI & LLM Handbook: Nuanced Natural Language Programming
 
-This repository provides a practical framework for building real software and documentation workflows using Generative AI and Large Language Models (LLMs). It treats language as a technical surface and requires professional fluency across:
+This repository provides a practical handbook for building real software and documentation workflows using Generative AI and Large Language Models (LLMs). It treats language as a technical surface and requires professional fluency across:
 
 -   **Logic**: Understanding cause-and-effect, conditions, and invariants.
 -   **Language**: Using precise, unambiguous wording for instructions and constraints.
 -   **Systems**: Grasping the interconnectedness of components and the broader context.
 -   **Sentences**: Structuring executable statements to guide AI actions.
 
-GenAI & LLM Documentation is designed for real-world execution: product and user needs, constraints, trade-offs, review discipline, evaluation, and governance.
+GenAI & LLM Handbook is designed for real-world execution: product and user needs, constraints, trade-offs, review discipline, evaluation, and governance.
 
-Most AI failures are not model failures. They are **human specification failures**. This documentation exists to make natural language execution reliable by teaching:
+Most AI failures are not model failures. They are **human specification failures**. This handbook exists to make natural language execution reliable by teaching:
 
 -   A repeatable **method** for expressing intent, encoding constraints, delegating safely to AI tools, and verifying outputs with evidence before acceptance.
 -   **Execution patterns** and **professional scenarios** that demonstrate how to apply this method to common development tasks.
@@ -24,25 +24,36 @@ Most AI failures are not model failures. They are **human specification failures
 
 ## Get Started Here
 
-This documentation is structured to be navigable by role and by need.
+This handbook is structured to be navigable by role and by need. Navigation order:
 
-1.  **If you are new to GenAI & LLM Documentation**: Start with the foundational concepts.
-    -   What is GenAI & LLM Documentation: `docs/00-handbook-introduction/what-is-genai-llm.md`
-    -   The GenAI & LLM Documentation Map: `docs/00-handbook-introduction/genai-llm-map.md`
+1.  Start Here: `docs/00-handbook-introduction/`
+2.  Handbook Method: `docs/01-handbook-method/` (loop, artifacts, core skills, evaluation library)
+3.  Execution Patterns: `docs/02-execution-patterns/`
+4.  Professional Scenarios: `docs/03-professional-scenarios/`
+5.  Tooling & Frameworks: `docs/04-tooling-and-frameworks/`
+6.  Responsible AI: `docs/05-responsible-ai/`
+7.  Foundations (reference background): `docs/foundations/`
+8.  Templates: `docs/06-templates/`
+9.  Meta: `docs/AGENTS.md`, `docs/CHANGELOG.md`, `docs/LICENSE.md`
 
-2.  **If you want to apply GenAI & LLM Documentation immediately**: Jump into the practical applications.
-    -   The GenAI & LLM Documentation Method (how work gets done): `docs/01-handbook-core-method/the-genai-llm-loop.md`
+1.  **If you are new to the GenAI & LLM Handbook**: Start with the foundational concepts.
+    -   What is GenAI & LLM Handbook: `docs/00-handbook-introduction/what-is-genai-llm.md`
+    -   The GenAI & LLM Map: `docs/00-handbook-introduction/genai-llm-map.md`
+
+2.  **If you want to apply the GenAI & LLM Handbook immediately**: Jump into the practical applications.
+    -   The GenAI & LLM Handbook Method (how work gets done): `docs/01-handbook-method/the-genai-llm-loop.md`
     -   Execution Patterns (recipes for common tasks): `docs/02-execution-patterns/00-pattern-index.md`
+    -   Templates for artifacts and checklists: `docs/06-templates/00-templates-index.md`
 
-### Quickstart: run GenAI & LLM Documentation on a real task
+### Quickstart: run the GenAI & LLM Handbook on a real task
 
 Pick a small, concrete task (e.g., "add a field to a REST API response").
 
 1.  **Define Intent**: What is the precise goal? (e.g., "Add `lastLogin` timestamp to `/users/{id}` response.")
 2.  **Define Constraints**: What are the non-negotiables? (e.g., "Timestamp must be ISO 8601, only visible to admins, update on every login.")
-3.  **Generate**: Ask your AI to implement it.
+3.  **Generate**: Ask your AI to implement it (use a structured generation request).
 4.  **Review**: Critically examine the output against your Intent and Constraints.
-    -   Follow: `docs/01-handbook-core-method/review-and-interrogation.md`
+    -   Follow: `docs/01-handbook-method/review-and-interrogation.md`
 
 Example:
 

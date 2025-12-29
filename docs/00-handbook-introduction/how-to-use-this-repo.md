@@ -65,14 +65,14 @@ This repository is organized to help you navigate from foundational concepts to 
 
 ### If you want to apply the GenAI & LLM Handbook immediately:
 
-1. **The GenAI & LLM Handbook Loop**: `docs/01-handbook-core-method/the-genai-llm-loop.md`
+1. **The GenAI & LLM Handbook Loop**: `docs/01-handbook-method/the-genai-llm-loop.md`
 2.  Pick an **Execution Pattern** that matches your current task: `docs/04-patterns/00-pattern-index.md`
 3. Cross-reference with the map in `docs/00-handbook-introduction/genai-llm-map.md`
 
 ### If you want to master the GenAI & LLM Handbook:
 
 1.  Start with **Core Skills**: `docs/01-core-skills/00-core-skills-overview.md`
-2. Dive deep into the **GenAI & LLM Handbook Method**: `docs/01-handbook-core-method/the-genai-llm-loop.md`
+2. Dive deep into the **GenAI & LLM Handbook Method**: `docs/01-handbook-method/the-genai-llm-loop.md`
 3.  Explore **Professional Scenarios**: `docs/05-scenarios/00-scenarios-index.md`
 4.  Master **Guardrails & Governance**: `docs/07-guardrails/guardrails-index.md`
 

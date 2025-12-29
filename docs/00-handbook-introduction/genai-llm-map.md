@@ -60,7 +60,7 @@ flowchart TB
 | **Start Here**               | What is GenAI & LLM? Who is it for? | `00-introduction/what-is-genai-llm.md`, `00-introduction/who-this-is-for.md`                                                 |
 | **Core Skills**              | The human foundation for AI-assisted work | `../01-core-skills/00-core-skills-overview.md`                                                    |
 | **Fundamentals**             | Essential GenAI/LLM theory                | `../foundations/02-llm-deep-dive/fundamentals/00-fundamentals-index.md`                                           |
-| **The GenAI & LLM Handbook Method** | How do the artifacts fit together?    | `../01-handbook-core-method/the-genai-llm-loop.md`                                                       |
+| **The GenAI & LLM Handbook Method** | How do the artifacts fit together?    | `../01-handbook-method/the-genai-llm-loop.md`                                                       |
 | **Execution Patterns**       | How do I apply the GenAI & LLM Handbook to tasks? | `../02-execution-patterns/00-pattern-index.md`                                                |
 | **Professional Scenarios**   | Real-world use cases by role              | `../05-scenarios/00-scenarios-index.md`                                              |
 | **Guardrails & Governance**  | Safety, compliance, accountability        | `../07-guardrails/guardrails-index.md`                                             |
