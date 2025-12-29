@@ -27,12 +27,12 @@ Most AI failures are not model failures. They are **human specification failures
 This documentation is structured to be navigable by role and by need.
 
 1.  **If you are new to GenAI & LLM Documentation**: Start with the foundational concepts.
-    -   What is GenAI & LLM Documentation: `docs/00-start-here/00-what-is-nnlp.md` (Note: This link will be updated in next steps)
-    -   The GenAI & LLM Documentation Map: `docs/00-start-here/03-the-nnlp-map.md` (Note: This link will be updated in next steps)
+    -   What is GenAI & LLM Documentation: `docs/00-handbook-introduction/what-is-genai-llm.md`
+    -   The GenAI & LLM Documentation Map: `docs/00-handbook-introduction/genai-llm-map.md`
 
 2.  **If you want to apply GenAI & LLM Documentation immediately**: Jump into the practical applications.
-    -   The GenAI & LLM Documentation Method (how work gets done): `docs/03-nnlp-method/00-the-nnlp-loop.md`
-    -   Execution Patterns (recipes for common tasks): `docs/04-execution-patterns/00-pattern-index.md`
+    -   The GenAI & LLM Documentation Method (how work gets done): `docs/01-handbook-core-method/the-genai-llm-loop.md`
+    -   Execution Patterns (recipes for common tasks): `docs/02-execution-patterns/00-pattern-index.md`
 
 ### Quickstart: run GenAI & LLM Documentation on a real task
 
@@ -42,7 +42,7 @@ Pick a small, concrete task (e.g., "add a field to a REST API response").
 2.  **Define Constraints**: What are the non-negotiables? (e.g., "Timestamp must be ISO 8601, only visible to admins, update on every login.")
 3.  **Generate**: Ask your AI to implement it.
 4.  **Review**: Critically examine the output against your Intent and Constraints.
-    -   Follow: `docs/03-nnlp-method/06-review-and-interrogation.md`
+    -   Follow: `docs/01-handbook-core-method/review-and-interrogation.md`
 
 Example:
 

@@ -3,7 +3,7 @@ import type {Preset} from '@docusaurus/preset-classic';
 import {themes as prismThemes} from 'prism-react-renderer';
 
 const config: Config = {
-  title: 'GenAI & LLM Documentation',
+  title: 'GenAI & LLM Handbook',
   tagline: 'Documentation for Generative AI and LLMs',
   favicon: 'img/favicon-genai.svg',
   url: 'https://pruning-my-pothos.github.io',
@@ -63,11 +63,16 @@ const config: Config = {
       {name: 'keywords', content: 'genai, llm, documentation, programming, development'},
     ],
     navbar: {
-      title: 'GenAI & LLM Documentation',
+      title: 'GenAI & LLM Handbook',
       items: [
-        {type: 'doc', docId: '00-introduction/scope-and-applicability', label: 'Start Here', position: 'left'},
+        {type: 'doc', docId: '00-handbook-introduction/scope-and-applicability', label: 'Start Here', position: 'left'},
         {
-          href: 'https://github.com/pruning-my-pothos/NNLP',
+          label: 'Shailesh Rawat · sans_serif_sentiments',
+          href: 'https://www.linkedin.com/in/shailesh-rawat/',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/pruning-my-pothos/gen-ai-llm-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -75,7 +80,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `GenAI & LLM Documentation · ${new Date().getFullYear()}`,
+      copyright: `GenAI & LLM Handbook · ${new Date().getFullYear()}`,
     },
   },
   themes: ['@docusaurus/theme-mermaid'],
