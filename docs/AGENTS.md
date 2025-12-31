@@ -14,7 +14,11 @@ last_reviewed: "2025-12-20"
 
 ## Overview
 
-This file defines how CLI-based agents should behave inside this repo (Codex CLI, Aider, Claude Code/terminal, similar tools).
+:::info[Purpose]
+Guardrails for any CLI-based agent (Codex CLI, Aider, Claude Code/terminal, similar) operating in this repo.
+:::
+
+This file defines how CLI-based agents should behave inside this repo.
 
 GenAI & LLM Documentation assumes AI can execute, but humans own:
 
@@ -74,6 +78,7 @@ Agents must never:
 - paste secrets or tokens into prompts
 - fetch private data or proprietary code from outside this repo
 - introduce code with unclear licensing
+- auto-commit without human review
 
 If uncertain about licensing, stop and ask for a citation or replacement.
 
@@ -130,19 +135,12 @@ Agents must follow this order:
 
 ## Access Control & Permissions
 
-### Allowed
-
-- Create new docs according to GenAI & LLM Documentation templates
-- Update links, indexes, and navigation
-- Add diagrams (Mermaid) where relevant
-- Add experiments under `experiments/` with the standard structure
-
-### Not Allowed
-
-- Changing repo structure without explicit instruction
-- Introducing new dependencies without justification
-- Adding external code without license clarity
-- Editing security or governance docs to weaken controls
+| ✅ Allowed | 🚫 Not Allowed |
+| --- | --- |
+| Create docs using repo templates | Change repo structure without explicit instruction |
+| Update links, indexes, navigation | Introduce new dependencies without justification |
+| Add diagrams (Mermaid) where relevant | Add external code without license clarity |
+| Add experiments under `experiments/` (standard structure) | Weaken security/governance docs |
 
 ---
 
