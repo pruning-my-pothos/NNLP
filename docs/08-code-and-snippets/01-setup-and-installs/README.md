@@ -21,28 +21,24 @@ The goal is to enable you to run, test, and develop GenAI applications entirely 
 
 ## Local Language Model Runtimes
 
-You need a tool to run local LLMs. We cover the two most popular options. You can install both, but you'll typically only run one at a time.
-
--   [**LM Studio Setup](./lm-studio-setup.md)**: Recommended for beginners or those who prefer a graphical user interface (GUI). It makes it easy to browse, download, and manage models, and includes a point-and-click interface for spinning up an OpenAI-compatible server.
--   [**Ollama Setup](./ollama-setup.md)**: Recommended for developers comfortable with the command line or those looking to automate their workflow. Ollama is lightweight, fast, and exposes a local API server by default, making it ideal for integration into scripts and applications.
--   [**llama.cpp Setup](./llama-cpp-setup.md)**: For advanced users who want to build and run the core inference engine from source. This provides maximum control and performance but requires compilation and manual model management.
--   [**MLX Setup](./mlx-setup.md)**: For users on Apple Silicon (M-series chips) who want to leverage Apple's native MLX framework for optimized performance.
+-   [**LM Studio Setup**](./lm-studio-setup.md): GUI-friendly; browse/download models; spin up an OpenAI-compatible server.
+-   [**Ollama Setup**](./ollama-setup.md): CLI-friendly; pull/run models fast; exposes a local API by default.
+-   [**llama.cpp Setup**](./llama-cpp-setup.md): Build/run the core engine from source for maximum control.
+-   [**MLX Setup**](./mlx-setup.md): Apple Silicon–optimized inference with MLX.
 
 ## Programming Environment Setup
 
-Reliable dependency management is critical for reproducibility.
-
--   [**Python Setup with uv](./python-uv-venv.md)**: The **recommended** approach for Python projects. `uv` is an extremely fast, next-generation packaging tool that replaces `pip` and `venv` with a single, high-performance binary.
--   [**Python Setup with venv and pip](./python-venv-pip.md)**: The traditional, built-in method for managing Python virtual environments. Use this if you don't want to install third-party tooling.
--   [**Node.js with nvm and pnpm](./node-nvm-pnpm.md)**: The recommended setup for Node.js projects. `nvm` allows you to manage multiple Node.js versions, and `pnpm` is a fast and disk-space-efficient package manager.
+-   [**Python (uv)**](./python-uv-venv.md): Recommended; fast install/resolve; manages venv + deps in one tool.
+-   [**Python (venv + pip)**](./python-venv-pip.md): Standard built-in flow; no extra tooling.
+-   [**Node.js (nvm + pnpm)**](./node-nvm-pnpm.md): Manage Node versions and install deps efficiently.
 
 ## Sanity Checks
 
--   [**Sanity Checks](./sanity-checks.md)**: After setting up your environment, run these simple checks to ensure all tools are installed correctly and can communicate with each other.
+-   [**Sanity Checks**](./sanity-checks.md): Quick commands to confirm installs and API endpoints are working locally.
 
 :::tip[Recommended Path for Beginners]
-1.  Start with [**LM Studio**](./lm-studio-setup.md) to visually explore and download a model.
-2.  Set up your Python environment using [**`uv`**](./python-uv-venv.md) for its speed and simplicity.
-3.  Run the [**Sanity Checks**](./sanity-checks.md) to confirm everything works.
-4.  Once you're comfortable, explore [**Ollama**](./ollama-setup.md) for a more streamlined, command-line-driven workflow.
+1) Start with **LM Studio** to pull a small model.  
+2) Set up Python with **uv** (or venv+pip if you prefer built-in).  
+3) Run **Sanity Checks** to confirm installs.  
+4) Try **Ollama** when you’re ready for a streamlined CLI workflow.
 :::
