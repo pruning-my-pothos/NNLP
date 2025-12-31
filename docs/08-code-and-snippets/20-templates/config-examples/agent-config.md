@@ -4,7 +4,7 @@ archetype: "template"
 status: "active"
 owner: "NNLP"
 maintainer: "NNLP"
-version": "1.0.0"
+version: "1.0.0"
 tags: ["configuration", "agents", "tool-use", "template", "yaml"]
 last_reviewed: "2025-12-31"
 ---
@@ -98,5 +98,5 @@ It's good practice to keep tool JSON Schema definitions in separate files and re
 :::
 
 :::warning[Security of Tools]
-Always ensure that the actual functions your agent calls (via `tool_executor_map`) are robustly implemented and secured, especially when they perform sensitive actions. (See [Sandboxing and Allowlists for LLM Agents](./../17-agents-and-tool-use-mini/sandboxing-and-allowlists.md)).
+Always ensure that the actual functions your agent calls (via `tool_executor_map`) are robustly implemented and secured, especially when they perform sensitive actions. (See [Sandboxing and Allowlists for LLM Agents](../../17-agents-and-tool-use-mini/sandboxing-and-allowlists.md)).
 :::

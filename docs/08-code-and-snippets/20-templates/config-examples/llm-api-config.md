@@ -4,7 +4,7 @@ archetype: "template"
 status: "active"
 owner: "NNLP"
 maintainer: "NNLP"
-version": "1.0.0"
+version: "1.0.0"
 tags: ["configuration", "llm-api", "template", "yaml"]
 last_reviewed: "2025-12-31"
 ---
