@@ -1,20 +1,20 @@
 ---
-title: "GenAI & LLM Documentation Agent Instructions for Codex"
+title: "CLI Agent Operating Guide"
 id: "AGENTS"
 archetype: "tooling"
 status: "active"
 owner: "Shailesh (Shaily)"
 maintainer: "Shailesh (Shaily)"
 version: "0.1.0"
-tags: ["genai-llm", "codex", "agents", "cli", "workflow", "guardrails"]
+tags: ["genai-llm", "agents", "cli", "workflow", "guardrails"]
 last_reviewed: "2025-12-20"
 ---
 
-# agents.md (Codex Agents)
+# CLI Agents (General)
 
 ## Overview
 
-This file defines how Codex agents should behave inside this repo.
+This file defines how CLI-based agents should behave inside this repo (Codex CLI, Aider, Claude Code/terminal, similar tools).
 
 GenAI & LLM Documentation assumes AI can execute, but humans own:
 
@@ -44,7 +44,7 @@ This file is designed to:
 
 ### Audience
 
-- Anyone running Codex (or similar CLI copilots) against this repository
+- Anyone running CLI copilots/agents against this repository
 - Contributors creating docs, patterns, scenarios, or experiments
 
 ### Scope
@@ -76,6 +76,16 @@ Agents must never:
 - introduce code with unclear licensing
 
 If uncertain about licensing, stop and ask for a citation or replacement.
+
+---
+
+## Supported CLI Agents (pick the one you use)
+
+- **Codex CLI**: `codex <agent> "Plan/Implement/Review ..."`
+- **Aider**: interactive; start with `aider --model gpt-4o-mini --no-auto-commit` (or your model); begin with a plan prompt.
+- **Claude Code (terminal)**: run `claude code` (or provider CLI) and paste the plan/implement prompts below.
+
+> All agents must follow the same operating mode: plan → execute in small diffs → verify → summarize. Disable auto-commit/auto-apply when possible.
 
 ---
 
@@ -239,6 +249,22 @@ codex <agent-or-mode> "Review the diff in: <files>. Identify risks, regressions,
 
 If you paste your `codex --help` output, I will convert these into exact commands for your installed version.
 
+### Aider (example prompts)
+
+- Start interactive session (no auto-commit):
+  ```bash
+  aider --model gpt-4o-mini --no-auto-commit
+  ```
+- First message: `Plan the changes for: <task>. List files to edit. Do not modify files yet.`
+- When ready to edit: `Implement <task>. Constraints: <list>. Keep diffs small.`
+- Review: `Review the current diffs; list risks/regressions and missing constraints. Do not change files.`
+
+### Claude Code (terminal) / similar
+
+- First message: `Plan the changes for: <task>. Files to touch? Constraints? Validation steps? No code yet.`
+- Implement: `Apply the plan in small diffs. Respect constraints: <list>. Summarize diffs and tests run.`
+- Review: `Review current changes for risks/regressions. No new edits; just findings.`
+
 ---
 
 ## Resources & References
@@ -246,6 +272,7 @@ If you paste your `codex --help` output, I will convert these into exact command
 - GenAI & LLM Documentation Method: `docs/01-handbook-method/`
 - Guardrails: `docs/05-responsible-ai/`
 - Templates: `docs/06-templates/`
+- Code & Snippets: `docs/08-code-and-snippets/`
 
 ---
 
