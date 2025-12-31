@@ -20,6 +20,17 @@ Most AI failures are not model failures. They are **human specification failures
 -   **Execution patterns** and **professional scenarios** that demonstrate how to apply this method to common development tasks.
 -   Guidance on **guardrails, governance, and evaluation** to ensure responsible and effective AI adoption.
 
+## Why “Nuanced” Natural Language Programming
+
+Natural language only works as a control surface when it is crafted with precision and restraint:
+- **Explicit context and constraints**: state scope, non-goals, safety, SLAs, data boundaries up front.
+- **Order and structure**: system → context → task → constraints → outputs; avoid “chatty” prompts.
+- **Tight semantics**: prefer unambiguous verbs/nouns, required/forbidden lists, schemas, and examples that match the target format.
+- **Incremental generation**: split interface vs. scaffold vs. implementation vs. tests; avoid “do everything” asks.
+- **Verification by design**: bake in acceptance criteria, citations, deterministic-ish settings, and evidence checks.
+
+The “nuance” is the discipline to be specific, constrained, and testable—turning language into an executable spec rather than casual instructions.
+
 ---
 
 ## Get Started Here
