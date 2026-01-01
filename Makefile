@@ -1,33 +1,42 @@
 SHELL := /bin/bash
 
-.PHONY: install dev build serve push status clean pages-build pages-serve pages-deploy
+.PHONY: check-node install dev build serve push status clean pages-build pages-serve pages-deploy
+
+NODE_CHECK=node -e "const v=process.versions.node.split('.')[0]; if(+v<20){console.error('Node 20+ required. Found', process.version); process.exit(1);} else {console.log('Using Node', process.version);}"
 
 # Install site deps
 install:
-	cd website && npm install
+	$(NODE_CHECK)
+	cd website && npm ci
 
 # Run dev server
 dev:
+	$(NODE_CHECK)
 	cd website && npm run start
 
 # Build static site
 build:
+	$(NODE_CHECK)
 	cd website && npm run build
 
 # Serve built site
 serve:
+	$(NODE_CHECK)
 	cd website && npm run serve
 
 # Build static site for GitHub Pages
 pages-build:
+	$(NODE_CHECK)
 	cd website && npm run build
 
 # Serve the built site locally (after pages-build)
 pages-serve:
+	$(NODE_CHECK)
 	cd website && npm run serve
 
 # Deploy to GitHub Pages via GitHub Actions (no local gh-pages branch needed)
 pages-deploy:
+	$(NODE_CHECK)
 	cd website && npm run build
 	@echo "Build finished. Push main to trigger the GitHub Pages workflow (see .github/workflows/pages.yml)."
 
