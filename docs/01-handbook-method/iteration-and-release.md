@@ -26,7 +26,7 @@ The GenAI & LLM Handbook Loop is rarely a straight line. You will hit the **Acce
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | An AI-generated artifact fails acceptance criteria | You have no Acceptance Criteria defined   |
 | Incorporating feedback on AI outputs  | You are releasing an artifact without any prior review or testing |

@@ -26,7 +26,7 @@ Effective task scoping is crucial for successful AI-assisted development. Withou
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting any new feature development | The task is purely informational |
 | Delegating a complex coding problem   | The task requires human-specific creativity or empathy |

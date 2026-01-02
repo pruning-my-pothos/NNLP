@@ -24,7 +24,7 @@ Bugs in Generative AI (GenAI) applications can manifest in various ways, from su
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You encounter unexpected or incorrect AI model behavior    | You are developing a completely new feature (use a feature development pattern) |
 | A GenAI feature is underperforming or failing              | The issue is a known limitation that cannot be fixed (document it) |

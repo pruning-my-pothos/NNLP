@@ -24,7 +24,7 @@ While not a standalone "Codex CLI" type binary, "Claude Code" refers to the prac
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Working with large codebases that require extensive context | The task is a simple, straightforward code snippet generation (any model will do) |
 | Tasks demanding complex logical reasoning or multi-step problem solving | You require extremely low-latency, real-time code suggestions (IDE copilots are better for this) |

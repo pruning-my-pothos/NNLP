@@ -24,7 +24,7 @@ While running LLMs on a developer's local machine is excellent for privacy and r
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Scaling local LLM applications from individual use to team or internal production | The application is a simple desktop tool where the LLM inference is strictly isolated to a single user's machine |
 | Centralizing LLM inference to optimize hardware utilization and reduce costs | The primary goal is to train large foundation models, which typically requires specialized cloud infrastructure |

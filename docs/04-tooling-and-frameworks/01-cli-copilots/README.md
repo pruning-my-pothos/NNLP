@@ -26,7 +26,7 @@ CLI copilots are powerful AI agents that operate directly within your terminal, 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Evaluating different CLI copilots for your workflow        | The task is a one-off, trivial change that can be done manually faster |
 | Integrating AI agents into automated scripts or CI/CD pipelines | You require a highly visual, interactive debugging session |

@@ -24,7 +24,7 @@ Traditional LLM development often involves extensive manual prompt engineering, 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Building multi-stage LLM applications where individual prompts need to be optimized | The task is a simple, single-turn prompt where complex orchestration is unnecessary |
 | You have a small dataset for "demonstration" or "feedback" to optimize prompt components | You primarily need to manage data ingestion and indexing for RAG (LlamaIndex might be a better fit) |

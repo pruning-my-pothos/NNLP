@@ -26,7 +26,7 @@ Designing an API is a critical step in software development, dictating how diffe
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Defining new service boundaries       | The API is trivial and well-understood    |
 | Expanding existing API capabilities   | The API requires highly specialized, non-standard protocols |

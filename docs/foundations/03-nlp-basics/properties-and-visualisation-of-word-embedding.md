@@ -83,51 +83,42 @@ Visualizing high-dimensional data is challenging, but techniques exist to projec
 *   **Description**: By selecting a few words that form a known analogy (e.g., man, woman, king, queen) and plotting their vectors (after PCA/t-SNE reduction), one can visually confirm the vector arithmetic property.
 *   **Actionable Insight**: A compelling way to demonstrate the "reasoning" capability embedded within these numerical representations.
 
-### Code Example (Conceptual - Python with scikit-learn and matplotlib)
-
-:::warning[Placeholder Data]
-The code below uses `np.random.rand()` to generate vectors for demonstration purposes only. In a real application, these vectors would be loaded from a pre-trained model file (e.g., from GloVe or a saved Word2Vec model). The random vectors here will not produce meaningful clusters; they only serve to illustrate the visualization process itself.
-:::
+### Code Example (Toy, but Deterministic)
 
 ```python
-# Assuming you have a dictionary of word_to_vector_map from a pre-trained model
 import numpy as np
-from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 
-# Example word vectors (in a real scenario, these would come from Word2Vec, GloVe, etc.)
-words = ["king", "queen", "man", "woman", "apple", "orange", "banana", "car", "truck", "bicycle"]
-vectors = np.random.rand(len(words), 50) # Placeholder: assume 50-dim vectors
+# Simple, hand-crafted 2D vectors to illustrate clustering
+word_vectors = {
+    "king":   np.array([1.0, 1.2]),
+    "queen":  np.array([1.1, 1.1]),
+    "man":    np.array([0.9, 0.8]),
+    "woman":  np.array([1.0, 0.9]),
+    "apple":  np.array([-1.0, 1.0]),
+    "orange": np.array([-1.1, 0.9]),
+    "banana": np.array([-0.9, 1.1]),
+    "car":    np.array([0.5, -1.0]),
+    "truck":  np.array([0.6, -1.1]),
+    "bicycle":np.array([0.4, -0.9]),
+}
 
-# --- Example of semantic analogy (conceptual) ---
-# vector('king') - vector('man') + vector('woman')
-idx_king, idx_man, idx_woman = words.index("king"), words.index("man"), words.index("woman")
-analogous_vector = vectors[idx_king] - vectors[idx_man] + vectors[idx_woman]
+words = list(word_vectors.keys())
+vectors = np.stack(list(word_vectors.values()))
 
-# Find the closest word to analogous_vector (conceptually)
-# (In real-world, you'd calculate cosine similarity with all other words)
+plt.figure(figsize=(8, 6))
+for i, word in enumerate(words):
+    x, y = vectors[i]
+    plt.scatter(x, y, color="steelblue")
+    plt.annotate(word, (x, y), textcoords="offset points", xytext=(5,5))
 
-# --- Visualization using t-SNE ---
-tsne_model = TSNE(perplexity=5, n_components=2, init='pca', n_iter=2500, random_state=23)
-new_values = tsne_model.fit_transform(vectors)
-
-x = []
-y = []
-for value in new_values:
-    x.append(value[0])
-    y.append(value[1])
-
-plt.figure(figsize=(10, 8))
-for i in range(len(x)):
-    plt.scatter(x[i], y[i])
-    plt.annotate(words[i],
-                 xy=(x[i], y[i]),
-                 xytext=(5, 2),
-                 textcoords='offset points',
-                 ha='right',
-                 va='bottom')
-plt.title("2D t-SNE Visualization of Word Embeddings")
-plt.grid(True)
+plt.axhline(0, color="gray", linewidth=0.5)
+plt.axvline(0, color="gray", linewidth=0.5)
+plt.title("Toy 2D Embedding (clusters: royalty, fruit, vehicles)")
+plt.xlabel("dim 1")
+plt.ylabel("dim 2")
+plt.grid(True, linestyle="--", alpha=0.4)
+plt.tight_layout()
 plt.show()
 ```
 

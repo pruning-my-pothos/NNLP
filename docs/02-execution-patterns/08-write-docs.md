@@ -26,7 +26,7 @@ AI is excellent at explaining code, but it tends to be verbose and salesy.
 
 ## When to Use
 
-| ✅ Use This Pattern When...    | 🚫 Do Not Use When...         |
+| Good fit (use when...)    | Avoid (not a fit when...)         |
 | :----------------------------- | :---------------------------- |
 | Documenting a new API endpoint | Writing a marketing blog post |
 | Creating a README for a tool   | Writing a legal disclaimer    |

@@ -26,7 +26,7 @@ Refactoring is essential for maintaining code health, improving readability, and
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Improving the design of existing code | The code is already perfectly clean and maintainable |
 | Reducing complexity or duplicated logic | You are adding new features, not changing existing ones (use "Clean Slate") |

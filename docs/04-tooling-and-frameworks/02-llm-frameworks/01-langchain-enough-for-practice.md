@@ -24,7 +24,7 @@ LangChain is one of the most popular open-source frameworks for developing appli
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Building complex LLM applications requiring multiple steps or sequential logic | The task is a single, simple prompt to an LLM where a direct API call suffices |
 | Implementing Retrieval Augmented Generation (RAG) to ground LLMs in specific data | You need extremely fine-grained control over every token and every aspect of the LLM interaction for performance-critical tasks |

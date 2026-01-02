@@ -24,7 +24,7 @@ Effective onboarding and continuous learning are critical for employee success a
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Onboarding new employees to complex roles or large codebases | Training requires highly sensitive, confidential, or proprietary information that cannot be safely exposed to AI |
 | Upskilling existing teams on new technologies or internal tools | The primary learning objective is complex interpersonal skills or emotional intelligence best taught through human interaction |

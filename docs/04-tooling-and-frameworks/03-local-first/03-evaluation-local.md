@@ -24,7 +24,7 @@ Choosing and utilizing local LLMs effectively requires a robust evaluation strat
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Selecting the best local LLM for a new project or specific task | The task is a simple, non-critical internal prompt where raw model output is acceptable |
 | Optimizing prompting strategies for a chosen local LLM     | You solely rely on cloud LLMs and their provided evaluation metrics suffice |

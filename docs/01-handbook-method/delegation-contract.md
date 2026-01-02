@@ -26,7 +26,7 @@ In GenAI & LLM Handbook, delegating to AI is a precise act. The Delegation Contr
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Every time you delegate a code-generating task to AI | The task is purely informational (e.g., summarizing an article) |
 | Asking AI to modify existing code     | You are brainstorming ideas where boundaries are intentionally fluid |

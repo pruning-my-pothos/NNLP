@@ -24,7 +24,7 @@ AI copilots can rapidly generate and modify code, but this speed can introduce c
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Regularly using AI copilots for code generation or modification | The AI is only used for brainstorming or minor suggestions that aren't committed to the codebase |
 | Working in a team environment where code reviews are critical | You are experimenting in a personal sandbox where code quality and history are not a concern |

@@ -24,7 +24,7 @@ Product discovery often starts with ambiguous problems or broad user needs. Tran
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Beginning a new product discovery phase with a nascent idea | The problem is extremely well-defined, and a PRD can be drafted directly from existing, clear specifications |
 | Struggling to articulate a clear problem statement or user pain points from qualitative research | AI is expected to *invent* a problem or user need without any human input or data |

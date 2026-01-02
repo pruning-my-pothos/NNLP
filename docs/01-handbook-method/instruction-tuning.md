@@ -24,7 +24,7 @@ Instruction tuning (also known as instruction following fine-tuning) is a specif
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Developing LLM applications that rely heavily on complex natural language instructions | The task requires simple text completion or generation without specific instruction following |
 | Needing LLMs to generalize to a wide variety of unseen tasks from new instructions | Your dataset is primarily for factual knowledge injection (RAG is generally better for this) |

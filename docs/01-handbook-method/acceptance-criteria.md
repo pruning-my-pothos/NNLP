@@ -26,7 +26,7 @@ Acceptance Criteria are the objective standards against which AI-generated artif
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Every time you expect an AI-generated output to be used in production | You are purely exploring or prototyping with no intention of deployment |
 | Defining tasks for an AI agent        | The output is a draft for internal discussion, not external release |

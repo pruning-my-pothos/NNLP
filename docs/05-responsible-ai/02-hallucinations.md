@@ -26,7 +26,7 @@ Large Language Models (LLMs) are powerful but not infallible. They are probabili
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Designing critical AI-assisted workflows | You assume LLMs are infallible and always correct |
 | Debugging unexpected AI behavior      | You are only concerned with the speed of generation |

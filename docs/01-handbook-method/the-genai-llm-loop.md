@@ -26,7 +26,7 @@ The GenAI & LLM Handbook Loop defines **how work actually flows** when you use n
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Building any AI-assisted feature      | You are exploring ideas with no clear outcome |
 | Fixing bugs with AI assistance        | The task is trivial and has no impact     |

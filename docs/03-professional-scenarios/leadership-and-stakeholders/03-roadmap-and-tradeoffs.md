@@ -24,7 +24,7 @@ Roadmap planning involves balancing competing priorities, limited resources, and
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Planning quarterly or annual product/initiative roadmaps   | The decision involves highly sensitive, unshareable internal politics or confidential negotiations |
 | Evaluating multiple strategic options with complex interdependencies | The primary goal is to generate simple project timelines without deep analysis or trade-off consideration |

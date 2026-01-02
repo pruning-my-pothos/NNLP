@@ -26,7 +26,7 @@ Software systems evolve, and with them, their underlying data structures and dep
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Changing database schema (DDL)        | You are performing simple data entry or deletion |
 | Transforming data (DML)               | The system is offline for an extended period anyway |

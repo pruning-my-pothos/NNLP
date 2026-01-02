@@ -26,7 +26,7 @@ Traditional threat modeling can be resource-intensive. For AI-assisted developme
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Delegating code generation to AI      | You are developing a simple, non-sensitive internal tool without external access |
 | Handling sensitive data with AI       | A full, comprehensive threat model is already in progress by a dedicated security team |

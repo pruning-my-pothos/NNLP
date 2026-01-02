@@ -26,7 +26,7 @@ The Intent Spec (Intent Specification) is a foundational artifact in the GenAI &
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting any new AI-assisted task     | You are purely exploring an AI's capabilities for fun |
 | Delegating a feature to an AI agent   | The task is a simple bug fix with a known solution |

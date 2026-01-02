@@ -26,7 +26,7 @@ Debugging can be a time-consuming and frustrating process. This pattern advocate
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Encountering unexpected application behavior | The problem is purely conceptual and doesn't manifest in code execution |
 | Analyzing complex system logs or traces | The issue is a known, simple syntax error that an IDE would catch |

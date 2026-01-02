@@ -24,7 +24,7 @@ Continue acts as an intelligent layer between your IDE (VS Code, JetBrains) and 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You need a persistent chat history with the AI across multiple files or sessions | You prefer a simpler, less integrated AI coding assistant |
 | Working on tasks requiring the AI to understand a broad context (multiple files, docs) | The task is a one-off, atomic change that can be done quickly manually |

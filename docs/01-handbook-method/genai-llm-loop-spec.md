@@ -26,7 +26,7 @@ The GenAI & LLM Handbook Loop is an 8-step iterative process designed to make AI
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Structuring any AI-assisted development task | You are only experimenting and learning basic prompt engineering |
 | Ensuring team consistency in AI adoption | The task is purely informational and has no measurable outcome |

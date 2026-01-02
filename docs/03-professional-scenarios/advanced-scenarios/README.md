@@ -28,7 +28,7 @@ Applying GenAI & LLM in *complex* professional settings involves more than just 
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Learning how to apply GenAI & LLM to your specific role | You are looking for a definitive, single answer to every problem |
 | Onboarding new team members to AI-assisted workflows | The scenario perfectly matches a simple Execution Pattern |

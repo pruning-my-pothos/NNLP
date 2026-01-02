@@ -24,7 +24,7 @@ Performance issues in AI/LLM applications can stem from various sources: slow mo
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | User reports of slow AI feature responses                  | The issue is clearly a functional bug unrelated to speed |
 | System metrics show high latency or low throughput         | You are still in the early prototyping phase where performance is not yet critical |

@@ -24,7 +24,7 @@ Large Language Models are trained on vast amounts of public data, but they lack 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Building LLM applications that need to query private or internal documentation | The application's data is small enough to fit within a single LLM context window and is static |
 | Seeking to reduce LLM hallucinations and provide factually grounded answers | You are building a generative AI model from scratch and primarily need raw training data |

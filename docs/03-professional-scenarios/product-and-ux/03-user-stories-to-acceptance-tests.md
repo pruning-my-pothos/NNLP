@@ -24,7 +24,7 @@ A well-defined user story needs equally well-defined acceptance criteria to guid
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You have clear user stories and need to generate detailed acceptance criteria | The user story is vague or requires significant human interpretation before test case generation |
 | Needing to ensure comprehensive test coverage for all aspects of a feature | The AI is expected to *design* the testing strategy itself (human QA is crucial for strategy) |

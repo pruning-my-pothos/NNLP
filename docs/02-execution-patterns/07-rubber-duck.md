@@ -26,7 +26,7 @@ Use this pattern to debug complex logic or understand legacy code. It forces the
 
 ## When to Use
 
-| ✅ Use This Pattern When...               | 🚫 Do Not Use When...                |
+| Good fit (use when...)               | Avoid (not a fit when...)                |
 | :---------------------------------------- | :----------------------------------- |
 | You have a stack trace but no idea why    | You need to write a new feature      |
 | You are reading code you didn't write     | You are doing a large-scale refactor |

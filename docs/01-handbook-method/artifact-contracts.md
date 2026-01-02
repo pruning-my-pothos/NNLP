@@ -26,7 +26,7 @@ In the GenAI & LLM Handbook workflow, every significant output is an "artifact."
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Every stage of the GenAI & LLM Handbook Loop | The output is purely for transient, personal scratchpad notes |
 | Establishing team standards for AI-assisted work | The work is an informal brainstorm with no expectation of formal output |

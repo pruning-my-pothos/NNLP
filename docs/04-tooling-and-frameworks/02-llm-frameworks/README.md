@@ -26,7 +26,7 @@ While direct prompting with LLMs is powerful, building complex AI applications o
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Building multi-step AI agents or conversational interfaces | The task involves a simple, single-turn LLM interaction |
 | Integrating LLMs with proprietary data sources (RAG)       | You are solely using an IDE copilot for code generation |

@@ -53,15 +53,15 @@ Clear, consistent terminology is fundamental for effective communication with bo
 
 ---
 
-## Symbols and Labels Used in the GenAI & LLM Handbook
+## Labels Used in the GenAI & LLM Handbook
 
-We use a set of visual cues and icons to convey information density, warnings, and calls to action.
+We use consistent text labels (rather than emojis) to keep the handbook professional and screen-reader friendly:
 
--   `💡` (Tip): Helpful advice, best practices.
--   `⚠️` (Warning): Important considerations, potential pitfalls.
--   `🛑` (Stop): Critical risks, do not proceed without addressing.
--   `✅` (Good): Example of a good practice or output.
--   `❌` (Bad): Example of a bad practice or output.
+-   `Tip`: Helpful advice, best practices.
+-   `Warning`: Important considerations, potential pitfalls.
+-   `Stop`: Critical risks, do not proceed without addressing.
+-   `Good`: Example of a good practice or output.
+-   `Bad`: Example of a bad practice or output.
 
 ---
 

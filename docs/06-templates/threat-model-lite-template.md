@@ -23,7 +23,7 @@ Fill this out for any feature that uses an LLM. If you answer "Yes" to any High 
 
 - [ ] **PII / User Data**: Names, emails, phone numbers.
 - [ ] **Internal IP**: Codebase, docs, strategy.
-- [ ] **Secrets**: API keys, credentials (🚫 STOP if checked).
+- [ ] **Secrets**: API keys, credentials (Avoid STOP if checked).
 
 > **Mitigation**: [e.g., Data masking middleware, PII stripper]
 

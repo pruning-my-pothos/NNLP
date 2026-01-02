@@ -24,7 +24,7 @@ Security reviews and audits are essential for validating the robustness of syste
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Preparing for regular internal security audits or penetration tests | The AI is expected to *conduct* the security audit itself (human auditors are crucial) |
 | Needing to generate or update documentation like threat models, data flow diagrams, or compliance matrices | The system involves highly classified or top-secret information that cannot be exposed to any AI model |

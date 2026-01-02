@@ -26,7 +26,7 @@ This is the first step in the Handbook Loop. Its purpose is to lay a solid found
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting any new feature or project   | You already have a clear, documented problem statement |
 | Clarifying vague stakeholder requests | The problem is purely technical and well-defined (e.g., "fix a known bug") |

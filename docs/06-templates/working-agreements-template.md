@@ -33,11 +33,11 @@ Use this template to align your team on **how** AI tools will be used. These are
 
 **Where is AI strictly forbidden?**
 
-| Category            | Policy                   | Reason             |
-| :------------------ | :----------------------- | :----------------- |
-| **PII / Secrets**   | 🚫 Never paste into chat | Data leakage risk  |
-| **Core Auth Logic** | ⚠️ Human-led only        | High security risk |
-| **Customer Data**   | 🚫 No training/inference | Privacy compliance |
+| Category            | Policy                           | Reason             |
+| :------------------ | :------------------------------- | :----------------- |
+| **PII / Secrets**   | Avoid: never paste into chat     | Data leakage risk  |
+| **Core Auth Logic** | Warning: keep human-led only     | High security risk |
+| **Customer Data**   | Avoid: no training/inference     | Privacy compliance |
 
 ---
 

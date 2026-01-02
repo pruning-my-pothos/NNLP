@@ -26,7 +26,7 @@ In the rush to integrate AI, the temptation to feed it all available data for "b
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Working with PII, PHI, or other sensitive data | The data is entirely public and non-sensitive |
 | Ensuring compliance with regulations (GDPR, HIPAA) | The AI tool is operating in a fully isolated, air-gapped environment |

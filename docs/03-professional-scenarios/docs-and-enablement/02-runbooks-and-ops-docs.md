@@ -24,7 +24,7 @@ Operational documentation, particularly runbooks, is vital for maintaining syste
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You have complex systems requiring detailed incident response procedures | You need highly nuanced, human-driven decisions that require creativity beyond AI's current capabilities |
 | Existing runbooks are frequently outdated or incomplete    | The system is static and rarely changes, making manual updates trivial |

@@ -135,7 +135,7 @@ Agents must follow this order:
 
 ## Access Control & Permissions
 
-| ✅ Allowed | 🚫 Not Allowed |
+| Good Allowed | Avoid Not Allowed |
 | --- | --- |
 | Create docs using repo templates | Change repo structure without explicit instruction |
 | Update links, indexes, navigation | Introduce new dependencies without justification |
@@ -144,13 +144,13 @@ Agents must follow this order:
 
 ---
 
-## Practical Examples & Templates (✅/❌)
+## Practical Examples & Templates (Good/Bad)
 
-✅ Good instruction to an agent
+Good Good instruction to an agent
 
 - “Create `docs/foundations/02-llm-deep-dive/fundamentals/01-how-llms-work-enough-for-practice.md` using the repo doc template. Keep it practice-oriented. Include one Mermaid diagram. Add a short ‘How this impacts GenAI & LLM Documentation execution’ section. Do not add external links unless necessary.”
 
-❌ Bad instruction to an agent
+Bad Bad instruction to an agent
 
 - “Write everything about embeddings and update the repo to support it.”
 

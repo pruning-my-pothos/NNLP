@@ -24,7 +24,7 @@ Risk management is a cornerstone of successful project delivery. However, identi
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Initiating new AI/LLM projects or features                 | Risk assessment is a simple, straightforward process for well-understood, mature projects |
 | Conducting regular risk reviews for ongoing initiatives    | You need to assign accountability for risks to AI (human ownership is non-negotiable) |

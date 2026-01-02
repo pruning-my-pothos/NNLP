@@ -26,7 +26,7 @@ AI is excellent at translation (e.g., Python to Go, SQL to JSON), but it often h
 
 ## When to Use
 
-| ✅ Use This Pattern When...             | 🚫 Do Not Use When...                     |
+| Good fit (use when...)             | Avoid (not a fit when...)                     |
 | :-------------------------------------- | :---------------------------------------- |
 | Porting a class from Java to TypeScript | You don't know the target language at all |
 | Converting SQL schemas to Pydantic/Zod  | The source code is buggy (fix it first)   |

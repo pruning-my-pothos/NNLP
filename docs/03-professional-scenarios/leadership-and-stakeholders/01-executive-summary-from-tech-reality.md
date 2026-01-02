@@ -24,7 +24,7 @@ Technical teams often struggle to communicate the impact of their work, challeng
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Reporting on the impact of technical debt on business goals | The technical information is simple enough to be summarized manually without risk of misinterpretation |
 | Summarizing incident post-mortems for executive review     | The communication requires a deep, empathetic human touch or involves highly sensitive political messaging |

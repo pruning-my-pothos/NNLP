@@ -26,7 +26,7 @@ Generating code from zero is AI's "Happy Path." However, without structure, it p
 
 ## When to Use
 
-| ✅ Use This Pattern When...    | 🚫 Do Not Use When...              |
+| Good fit (use when...)    | Avoid (not a fit when...)              |
 | :----------------------------- | :--------------------------------- |
 | You need a new React component | You are modifying a 500-line class |
 | You need a new API endpoint    | You are debugging a race condition |

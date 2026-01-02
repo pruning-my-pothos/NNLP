@@ -26,7 +26,7 @@ The rapidly evolving landscape of Large Language Models (LLMs) presents a bewild
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting a new AI-assisted project    | The decision has already been made and is non-negotiable |
 | Optimizing cost or performance of existing AI workflows | You are simply exploring LLM capabilities without a defined application |

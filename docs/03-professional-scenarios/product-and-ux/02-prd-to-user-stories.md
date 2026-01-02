@@ -24,7 +24,7 @@ Translating a high-level PRD into a detailed set of user stories that are ready 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You have a finalized PRD and need to generate user stories for agile sprints | The PRD is still in draft form or highly ambiguous, requiring human judgment to clarify core intent |
 | Needing to ensure comprehensive coverage of all PRD requirements in user stories | You need to generate creative or innovative solutions (AI is good at breaking down, less so at pure invention) |

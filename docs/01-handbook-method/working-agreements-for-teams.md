@@ -26,7 +26,7 @@ Integrating AI into a team's workflow isn't just a technical challenge; it's a c
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Onboarding new team members to AI-assisted workflows | You are a solo developer (though some principles still apply) |
 | Starting a new project with AI integration | The team has already established and consistently follows GenAI & LLM Handbook practices |

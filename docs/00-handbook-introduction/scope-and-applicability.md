@@ -28,7 +28,7 @@ The GenAI & LLM Handbook applies when AI-assisted work can meaningfully affect u
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Work has measurable business impact   | The work is purely experimental with no intention of deployment |
 | Outputs will affect users or systems  | The output is a quick personal draft with no wider audience |

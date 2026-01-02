@@ -26,7 +26,7 @@ The GenAI & LLM Handbook standard is comprehensive, but you don't need to read e
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Quickly onboarding to the GenAI & LLM Handbook | You need to deeply understand every nuance of the framework |
 | Requiring a compliance checklist for GenAI projects | You are only interested in a specific execution pattern |

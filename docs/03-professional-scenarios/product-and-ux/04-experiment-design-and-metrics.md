@@ -24,7 +24,7 @@ Designing effective experiments and identifying the right metrics to measure suc
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Launching a new feature or making a significant change to an existing one | The change is trivial and its impact is self-evident, not requiring formal experimentation |
 | Needing to validate a hypothesis about user behavior or business impact | The AI is expected to *make* the final product decision without human judgment or ethical consideration |

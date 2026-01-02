@@ -24,7 +24,7 @@ Developing a greenfield AI/LLM service presents unique opportunities and challen
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You are starting a completely new AI/LLM initiative        | You are integrating an AI feature into an existing mature application |
 | There is no existing infrastructure or codebase to leverage | The primary goal is to refactor or improve an existing AI component |

@@ -24,7 +24,7 @@ While prompt engineering helps guide general-purpose LLMs, fine-tuning takes cus
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Needing to achieve high accuracy on a specific, narrow task | The task can be reliably solved with effective prompt engineering alone |
 | Ensuring the LLM adheres to a specific tone of voice, brand guide, or code style | Your custom dataset is small, low-quality, or not representative of the task |

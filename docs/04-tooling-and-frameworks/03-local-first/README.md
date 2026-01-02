@@ -26,7 +26,7 @@ While cloud-based LLMs offer unparalleled power and accessibility, they come wit
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Working with highly sensitive PII, proprietary code, or trade secrets | You require the absolute largest, most performant, and bleeding-edge LLM models for every task |
 | Operating in environments with limited or no internet connectivity | Your hardware lacks sufficient CPU, RAM, or GPU to run even smaller models efficiently |

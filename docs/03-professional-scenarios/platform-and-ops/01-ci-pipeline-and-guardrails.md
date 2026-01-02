@@ -24,7 +24,7 @@ CI/CD pipelines are the backbone of modern software delivery, automating everyth
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Designing new CI/CD pipelines or enhancing existing ones   | The organization has highly bespoke, non-standardized tooling that AI cannot easily interface with |
 | Needing to enforce coding standards, security policies, or compliance rules across multiple teams | The primary goal is to generate marketing material (use a communications scenario) |

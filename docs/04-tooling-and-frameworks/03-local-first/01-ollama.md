@@ -24,7 +24,7 @@ Ollama is a powerful yet easy-to-use tool that allows developers to run open-sou
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Developing with proprietary code, internal documentation, or PII | You require the most powerful, cutting-edge LLMs that are only available on cloud infrastructure |
 | Operating in environments with limited or no internet access (offline development) | Your local hardware lacks sufficient CPU, RAM, or GPU to run even smaller models efficiently |

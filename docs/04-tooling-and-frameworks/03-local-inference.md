@@ -26,7 +26,7 @@ Most powerful LLMs are cloud-based, but for many professional development scenar
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Working with proprietary code or business logic | The task involves only public, non-sensitive information |
 | Handling PII or other sensitive data  | You require the absolute bleeding edge of LLM performance and size |

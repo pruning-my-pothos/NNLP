@@ -26,7 +26,7 @@ The Constraint Spec (Constraint Specification) is a critical artifact in the Gen
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Every time you delegate a task to AI  | You are purely brainstorming ideas where boundaries are intentionally fluid |
 | Defining technical standards          | The task is a simple informational query  |

@@ -24,7 +24,7 @@ Managing Infrastructure as Code (IaC) is critical for cloud environments, but ma
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Generating new infrastructure modules or components from high-level requirements | The IaC change is trivial (e.g., updating a tag) and fully automated by existing tools |
 | Validating IaC pull requests for security vulnerabilities, compliance deviations, or cost implications | The AI is expected to *approve* infrastructure changes without human oversight (human review is critical) |

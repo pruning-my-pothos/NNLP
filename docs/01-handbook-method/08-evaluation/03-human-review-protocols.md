@@ -26,7 +26,7 @@ AI generates plausible outputs, but correctness is not guaranteed. Review and In
 
 ## When to Use
 
-| ✅ Use This Pattern When...                     | 🚫 Do Not Use When...                     |
+| Good fit (use when...)                     | Avoid (not a fit when...)                     |
 | :---------------------------------------------- | :---------------------------------------- |
 | Evaluating any AI-generated artifact          | You are confident the AI cannot make mistakes |
 | Verifying critical paths or security logic      | You have no clear acceptance criteria     |

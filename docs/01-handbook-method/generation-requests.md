@@ -26,7 +26,7 @@ The Generation Request is the direct instruction given to an AI model to produce
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Creating any AI-generated artifact    | You are brainstorming or exploring concepts with AI |
 | Delegating a specific coding task     | The task is purely human-driven (e.g., strategic planning) |

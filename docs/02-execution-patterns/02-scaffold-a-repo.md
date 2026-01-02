@@ -26,7 +26,7 @@ Starting a new project often involves repetitive setup tasks: creating directori
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting any new project or microservice | You are modifying an existing, mature repository's core structure |
 | Experimenting with a new technology stack | The project has highly unusual or non-standard organizational needs |
@@ -67,7 +67,7 @@ Instruct the AI to generate initial versions of essential configuration files ba
 
 > "Generate `package.json`, `tsconfig.json`, `.eslintrc.js`, `.prettierrc`, and a basic `Dockerfile` for a Node.js Express application."
 
-### Step 4: Include Placeholder Code or Examples
+### Step 4: Include Sample Code or Examples
 
 For critical modules, ask for minimal boilerplate or "hello world" examples to verify the setup.
 
@@ -77,7 +77,7 @@ For critical modules, ask for minimal boilerplate or "hello world" examples to v
 flowchart LR
     A[Define Core Structure] --> B[Specify Tech Stack]
     B --> C[Outline Config Files]
-    C --> D[Include Placeholder Code]
+    C --> D[Include Sample Code]
 
     classDef step fill:#E6F7FF,stroke:#1B75BB,color:#0F1F2E;
     class A,B,C,D step;
@@ -120,7 +120,7 @@ flowchart LR
 -   A fully scaffolded project directory.
 -   Executable `package.json` scripts.
 -   A working "hello world" Express server.
--   Placeholders for `controllers`, `services`, `routes`, `utils`.
+-   Starter stubs for `controllers`, `services`, `routes`, `utils`.
 
 ```typescript
 // Example of desired `src/app.ts` content after scaffolding

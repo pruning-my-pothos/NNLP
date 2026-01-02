@@ -26,7 +26,7 @@ The "Strangler Fig" pattern involves wrapping legacy code with a new interface, 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                     | 🚫 Do Not Use When...                      |
+| Good fit (use when...)                     | Avoid (not a fit when...)                      |
 | :---------------------------------------------- | :----------------------------------------- |
 | You are migrating a monolith to microservices   | You are writing a new feature from scratch |
 | You are replacing a deprecated library          | You are fixing a simple bug                |

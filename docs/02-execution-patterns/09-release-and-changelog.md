@@ -26,7 +26,7 @@ Releasing software and communicating changes effectively are crucial for user ad
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Frequent software releases            | The project has no version control or structured commit messages |
 | Managing multiple product lines or modules | Releases are extremely infrequent and changes are minimal |

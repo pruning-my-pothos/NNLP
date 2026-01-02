@@ -24,7 +24,7 @@ Incident response is a high-stakes, time-sensitive process where every minute co
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Existing systems generate a high volume of alerts or logs  | The incident requires highly sensitive, classified information that cannot be processed by AI |
 | On-call teams struggle with alert fatigue or information overload | The AI is expected to take autonomous action in production systems without human oversight |

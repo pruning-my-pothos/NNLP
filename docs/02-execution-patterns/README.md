@@ -28,7 +28,7 @@ GenAI & LLM Documentation provides the **method** (the 8-step loop) for managing
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting a new component or module    | The problem is entirely novel and has no existing analogue |
 | Refactoring existing code             | You are simply debugging a single line of code |

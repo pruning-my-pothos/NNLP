@@ -26,7 +26,7 @@ The Discovery Brief is the very first step in the GenAI & LLM Handbook Loop. It 
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Starting any new feature or project   | You already have a clear, documented problem statement |
 | Clarifying vague stakeholder requests | The problem is purely technical and well-defined (e.g., "fix a known bug") |

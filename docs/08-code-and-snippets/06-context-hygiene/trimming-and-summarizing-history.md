@@ -91,22 +91,34 @@ This approach involves making an extra LLM call, which adds cost and latency. It
 3.  Replace the old messages with a single message like: `{"role": "system", "content": "Previous conversation summary: [summary text]"}`.
 
 ```python
-# This is a conceptual example. You would need an LLM client.
-# from your_llm_client import llm
+# Requires: pip install openai
+import os
+from openai import OpenAI
+from typing import List, Dict
+
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def summarize_history(history: List[Dict[str, str]]) -> str:
     """
     Uses an LLM to summarize a conversation history.
     """
-    # In a real implementation, you would format this history into a single string
     conversation_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in history])
-    
-    prompt = f"Please create a concise summary of the following conversation, capturing the key facts and user preferences:\n\n{conversation_text}"
-    
-    # conceptual call to an LLM
-    # summary = llm.complete(prompt) 
-    summary = "The user is asking about different strategies for managing chat history in LLM applications." # Placeholder summary
-    return summary
+    prompt = (
+        "Summarize the key facts, decisions, and open questions in this chat. "
+        "Keep it under 80 words.\n\n" + conversation_text
+    )
+
+    # Example call using OpenAI; replace with your client of choice
+    resp = client.chat.completions.create(
+        model="gpt-4o-mini",
+        temperature=0.2,
+        max_tokens=120,
+        messages=[
+            {"role": "system", "content": "Summarize chats accurately; do not invent details."},
+            {"role": "user", "content": prompt},
+        ],
+    )
+    return resp.choices[0].message.content
 
 def manage_history_with_summary(history: List[Dict[str, str]], max_length: int = 5):
     """

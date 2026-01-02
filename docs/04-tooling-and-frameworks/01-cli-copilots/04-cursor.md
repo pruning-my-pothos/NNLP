@@ -24,7 +24,7 @@ Cursor integrates AI deeply within the IDE, offering features like chat-based co
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You prefer an integrated IDE environment for AI-assisted CLI tasks | You are building complex, multi-stage automated pipelines that require headless execution |
 | Needing AI assistance for `git` commands, file operations, or build scripts | The task requires extremely high performance or low-level system interaction that bypasses the shell |

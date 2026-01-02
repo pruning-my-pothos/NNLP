@@ -24,7 +24,7 @@ Adding a new AI/LLM feature to an existing product requires careful consideratio
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You are enhancing an existing product with AI capabilities | You are building a completely new AI/LLM service from scratch (see greenfield scenario) |
 | The new feature will interact with existing data or logic | The primary goal is to refactor or improve an existing AI component within the system |

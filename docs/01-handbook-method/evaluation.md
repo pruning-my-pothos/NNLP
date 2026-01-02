@@ -24,7 +24,7 @@ Evaluation in the GenAI & LLM Handbook is the process of objectively assessing w
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Selecting or comparing different LLMs or prompting strategies | The task is purely human-driven and does not involve AI output |
 | Continuously monitoring the performance of deployed LLM applications | You are brainstorming or exploring concepts with no expectation of measurable output quality |

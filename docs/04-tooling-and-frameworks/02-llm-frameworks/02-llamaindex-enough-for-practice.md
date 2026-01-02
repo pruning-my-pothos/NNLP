@@ -24,7 +24,7 @@ LlamaIndex (formerly GPT Index) is a data framework designed to connect large la
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Building LLM applications that need to query private or domain-specific data | The task primarily involves multi-step reasoning or complex agentic behavior (LangChain might be a better fit) |
 | Implementing Retrieval Augmented Generation (RAG)           | The application does not require external data retrieval, or uses a very simple, static dataset |

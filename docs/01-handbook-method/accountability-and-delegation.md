@@ -26,7 +26,7 @@ AI tools are powerful, but they operate without judgment or responsibility. In G
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Defining team roles for AI-assisted projects | You are in a purely exploratory, non-production environment |
 | Establishing governance for AI tools  | The AI tool is making purely internal, non-impactful suggestions |

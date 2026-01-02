@@ -60,14 +60,14 @@ _If you skipped these, the scenario is "High Risk" regardless of the code qualit
 ```mermaid
 flowchart TD
     Start[End of Scenario] --> CheckProcess{Process Followed?}
-    CheckProcess -->|No| Fail[❌ Process Fail]
+    CheckProcess -->|No| Fail[Bad Process Fail]
     CheckProcess -->|Yes| CheckOutcome{Outcome Correct?}
 
-    CheckOutcome -->|No| FailOutcome[❌ Outcome Fail]
+    CheckOutcome -->|No| FailOutcome[Bad Outcome Fail]
     CheckOutcome -->|Yes| CheckEffort{Effort < Manual?}
 
-    CheckEffort -->|No| Warn[⚠️ Low ROI]
-    CheckEffort -->|Yes| Success[✅ High Value]
+    CheckEffort -->|No| Warn[Warning: Low ROI]
+    CheckEffort -->|Yes| Success[Good High Value]
 
     classDef stop fill:#FFE6E6,stroke:#D32F2F,color:#0F1F2E;
     classDef warn fill:#FFF4E5,stroke:#E6A23C,color:#2D1B0E;

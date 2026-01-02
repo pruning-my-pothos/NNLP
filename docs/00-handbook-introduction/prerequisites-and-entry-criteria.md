@@ -26,7 +26,7 @@ The GenAI & LLM Handbook is a powerful framework, but like any sophisticated too
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                      | 🚫 Do Not Use When...                                        |
+| Good fit (use when...)                                      | Avoid (not a fit when...)                                        |
 | :-------------------------------------------------------------- | :----------------------------------------------------------- |
 | Onboarding new team members to GenAI & LLM Handbook workflows   | You are a seasoned GenAI & LLM Handbook practitioner seeking advanced techniques |
 | Diagnosing recurring issues with AI-generated outputs           | You are looking for a silver bullet to solve all your development problems |

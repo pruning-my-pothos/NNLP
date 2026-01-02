@@ -26,7 +26,7 @@ Implementing AI-assisted development (GenAI & LLM Handbook) is an investment. To
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Justifying investment in AI tools     | You don't have a baseline to compare against |
 | Optimizing AI-assisted workflows      | The metrics collected are not actionable |

@@ -24,7 +24,7 @@ Codex CLI is a command-line interface that brings the capabilities of advanced l
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You need to automate repetitive code generation or transformation tasks | The task requires extensive human creativity or highly subjective design choices |
 | Working with small, well-defined code modules or functions | You are dealing with highly sensitive PII or classified information that cannot be exposed to cloud LLMs |

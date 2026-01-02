@@ -26,7 +26,7 @@ In GenAI & LLM Documentation, we do not treat AI as a magic box. We treat it as 
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Integrating AI into any production workflow | You are purely experimenting in a sandboxed, isolated environment |
 | Handling sensitive data with AI       | The AI functionality is purely passive (e.g., simple text summarization of public data) |
@@ -92,7 +92,7 @@ graph TD
         Intent(Intent Spec)
         Constraints(Constraint Spec)
     end
-    subgraph Execution ["⚙️ GenAI & LLM Documentation Loop"]
+    subgraph Execution ["GenAI & LLM Documentation Loop"]
         Delegation(Delegation Contract)
         Generation(Generation Request)
         Review(Review & Interrogation)

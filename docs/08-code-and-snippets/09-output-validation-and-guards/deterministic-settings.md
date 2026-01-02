@@ -45,62 +45,31 @@ Most LLM APIs expose parameters that allow you to fine-tune the randomness of th
 
 ---
 
-## Python Example: Setting Deterministic Parameters
+## Python Example: Deterministic Call (OpenAI SDK)
 
 ```python
-import openai # pip install openai
-from typing import List, Dict
+# pip install openai
+import os
+from openai import OpenAI
 
-# Assuming OPENAI_API_KEY is set
-# client = openai.OpenAI()
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-def generate_deterministic_output(
-    prompt_messages: List[Dict[str, str]],
-    model: str = "gpt-3.5-turbo",
-    temperature: float = 0.0,  # Maximize determinism
-    top_p: float = 0.1,        # Restrict sampling pool
-    seed: int = 42,            # Ensure reproducibility
-    max_tokens: int = 150
-) -> str:
-    """
-    Generates LLM output with parameters set for maximum determinism.
-    """
-    # Simulate LLM call
-    # In a real application, you would use:
-    # response = client.chat.completions.create(
-    #     model=model,
-    #     messages=prompt_messages,
-    #     temperature=temperature,
-    #     top_p=top_p,
-    #     seed=seed,
-    #     max_tokens=max_tokens
-    # )
-    # return response.choices[0].message.content
-    
-    # Placeholder for demonstration
-    if temperature == 0.0 and seed == 42:
-        return "The capital of France is Paris. This output is highly predictable."
-    else:
-        return "The capital of France is Paris. This output might vary slightly."
+def ask(prompt: str) -> str:
+    resp = client.chat.completions.create(
+        model="gpt-4o-mini",
+        temperature=0.0,   # deterministic
+        top_p=0.1,
+        max_tokens=120,
+        seed=42,           # reproducible
+        messages=[
+            {"role": "system", "content": "Answer factually and concisely."},
+            {"role": "user", "content": prompt},
+        ],
+    )
+    return resp.choices[0].message.content
 
-
-# --- Example Usage ---
-messages = [
-    {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": "What is the capital of France?"}
-]
-
-# Get a deterministic response
-output_1 = generate_deterministic_output(messages)
-print(f"Output 1 (Deterministic): {output_1}")
-
-# Get another deterministic response - should be identical
-output_2 = generate_deterministic_output(messages)
-print(f"Output 2 (Deterministic): {output_2}")
-
-# Example with higher temperature (more random)
-output_creative = generate_deterministic_output(messages, temperature=0.7, seed=None)
-print(f"Output (Creative): {output_creative}")
+print(ask("What is the capital of France?"))
+print(ask("List three HTTP methods."))
 ```
 
 ---

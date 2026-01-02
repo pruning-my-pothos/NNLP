@@ -26,7 +26,7 @@ Large Language Models excel at generating fluent text, but they often "hallucina
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Requiring factual accuracy in LLM outputs | The task is purely creative writing with no factual constraints |
 | Accessing proprietary or real-time data with LLMs | The information required is already perfectly within the LLM's training data |

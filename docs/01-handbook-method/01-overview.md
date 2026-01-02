@@ -24,7 +24,7 @@ The introduction of Generative AI significantly impacts the traditional project 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You are planning or running an AI/LLM feature or workflow  | You are fixing a trivial, well-scoped bug              |
 | You need accountable, reviewable AI-assisted outputs       | You are experimenting in a private sandbox only        |

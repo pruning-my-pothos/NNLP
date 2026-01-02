@@ -24,7 +24,7 @@ Fine-tuning large language models can be computationally expensive and memory-in
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You need to adapt a large LLM to a specific task or domain | You are performing full pre-training of a foundational model from scratch |
 | You have limited GPU resources or budget for fine-tuning   | Your task requires fundamental changes to the model's core capabilities beyond what adaptation can provide |

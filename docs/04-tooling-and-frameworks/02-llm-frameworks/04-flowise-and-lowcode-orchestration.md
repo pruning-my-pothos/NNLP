@@ -24,7 +24,7 @@ Not all LLM applications require deep coding expertise. Low-code orchestration p
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Rapidly prototyping LLM applications or proof-of-concepts  | The application requires extremely high performance optimization or low-level custom code |
 | Empowering non-developers or citizen developers to build AI solutions | You need to integrate with highly specialized, internal-only tools that the platform does not support |

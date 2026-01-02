@@ -29,7 +29,7 @@ The goal is to equip you with the tools and concepts needed to navigate, search,
 
 -   [**Task Runners: `Makefile` & `Justfile` Basics**](./makefile-justfile-basics.md): Stop typing long commands. Learn how to use `make` or the more modern `just` to create simple, memorable shortcuts for your project's common tasks like `install`, `test`, or `run`.
 
--   [**Paths, `PATH`, and Environment Variables**](./paths-env-vars.md): (Coming soon) A guide to understanding how your shell finds programs (`$PATH`) and how to manage secrets and configuration with environment variables (`.env` files).
+-   [**Paths, `PATH`, and Environment Variables**](./paths-env-vars.md): Understand how your shell finds programs (`$PATH`), and how to manage secrets/config via environment variables and `.env` files.
 
 :::tip[The CLI is a Superpower]
 Investing time in mastering these tools has a massive return. A fluent command-line user can debug, automate, and develop far more efficiently than one who relies solely on graphical interfaces.

@@ -26,7 +26,7 @@ CLI (Command Line Interface) agents are AI tools that you interact with directly
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Generating boilerplate code           | The task requires highly subjective design choices or complex human judgment |
 | Performing mechanical refactorings    | You are debugging a live production issue and need immediate human oversight |

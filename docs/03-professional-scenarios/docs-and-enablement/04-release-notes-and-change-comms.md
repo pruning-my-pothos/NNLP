@@ -24,7 +24,7 @@ Crafting clear, concise, and engaging release notes and change communications fo
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Releasing new features, bug fixes, or significant updates  | The change is highly sensitive or requires nuanced, non-factual human judgment (e.g., apology letters) |
 | Needing to communicate changes to multiple, distinct audiences (e.g., technical vs. non-technical) | You need to generate creative marketing copy that AI cannot produce with desired tone/impact |

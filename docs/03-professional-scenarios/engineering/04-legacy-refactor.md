@@ -24,7 +24,7 @@ Refactoring legacy systems is a common but challenging task. When coupled with t
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Existing system is brittle, hard to maintain, or slow      | The system is working perfectly, and there's no business need for change |
 | You need to integrate new AI/LLM capabilities into an old stack | A completely new system is being built from scratch (see greenfield scenario) |

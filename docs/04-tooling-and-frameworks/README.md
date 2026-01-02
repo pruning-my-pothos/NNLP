@@ -24,11 +24,13 @@ GenAI & LLM Documentation is **tool-agnostic**. It provides a framework for disc
 **Goal**: Guide practitioners in selecting and configuring tools that support the GenAI & LLM Documentation workflow, rather than dictating specific products.
 **Anti-pattern**: Relying on a tool's "magic" without understanding the underlying principles, or allowing tool limitations to dictate your workflow.
 
+**Tool-agnostic note**: Cursor and Copilot examples are optional conveniences. Everything here works in VS Code (with chat extensions), JetBrains IDEs, or plain terminal + editor. Pick the interface that fits your team and policy; the method stays the same.
+
 ---
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Selecting new AI-assisted development tools | You are trying to find the "best" LLM tool without considering your specific workflow |
 | Optimizing your AI-assisted workflow  | You expect a tool to solve all your prompt engineering challenges for you |

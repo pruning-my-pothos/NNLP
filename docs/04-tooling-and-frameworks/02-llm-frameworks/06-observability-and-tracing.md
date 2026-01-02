@@ -24,7 +24,7 @@ Unlike traditional software, LLM applications introduce new layers of complexity
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Developing complex LLM chains, agents, or RAG applications | The LLM application is a simple, single-turn prompt for a non-critical internal tool |
 | Experiencing unexpected LLM behavior (e.g., hallucinations, poor quality, high latency) | You are in the very early prototyping phase and prioritize rapid iteration over deep monitoring |

@@ -26,7 +26,7 @@ The introduction of Generative AI significantly impacts the traditional product 
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Developing new products with Generative AI as a core feature | You are building a traditional software product with no AI components |
 | Integrating GenAI capabilities into existing products | The AI functionality is purely an internal tool with no user-facing impact |

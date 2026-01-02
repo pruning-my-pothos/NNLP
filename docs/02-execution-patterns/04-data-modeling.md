@@ -26,7 +26,7 @@ Data modeling is the process of creating a visual or written representation of a
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Designing a new database schema       | The data model is trivial (e.g., a simple key-value store) |
 | Adding new entities to an existing database | You are primarily performing data migration, not schema design |

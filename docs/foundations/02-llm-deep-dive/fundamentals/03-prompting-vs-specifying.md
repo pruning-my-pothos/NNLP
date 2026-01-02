@@ -26,7 +26,7 @@ The terms "prompting" and "specifying" are often used interchangeably in the con
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Delegating production-impacting tasks to AI | You are purely exploring an LLM's capabilities for fun |
 | Requiring consistent and verifiable AI outputs | The task is a creative brainstorming session with no objective criteria |

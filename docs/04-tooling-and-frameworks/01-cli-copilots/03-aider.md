@@ -24,7 +24,7 @@ Aider stands out among CLI copilots for its deep integration with `git` and its 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Performing multi-file code modifications or refactorings   | The task is a simple, single-line change that is faster to do manually |
 | Generating comprehensive test suites for new or existing code | You prefer a purely non-interactive, fire-and-forget code generation approach |

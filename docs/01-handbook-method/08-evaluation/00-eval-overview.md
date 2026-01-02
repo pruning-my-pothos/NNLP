@@ -26,7 +26,7 @@ In AI-assisted development, evaluation is not an afterthought; it's a continuous
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Accepting any AI-generated artifact | The output is purely for personal learning and has no downstream impact |
 | Integrating AI-generated code into a production system | The "quality" is entirely subjective (e.g., artistic expression without objective criteria) |

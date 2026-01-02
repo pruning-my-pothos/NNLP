@@ -24,7 +24,7 @@ Establishing a new documentation site often involves repetitive tasks: choosing 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Starting a new project and needing documentation quickly   | The docs site is already mature and only requires minor content updates |
 | Migrating an existing collection of unstructured documents to a structured site | You need highly specialized, domain-expert-level content that AI cannot yet generate reliably |

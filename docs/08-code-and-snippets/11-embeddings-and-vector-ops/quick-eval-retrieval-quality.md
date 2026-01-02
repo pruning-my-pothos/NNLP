@@ -27,59 +27,36 @@ If your retriever consistently pulls irrelevant or insufficient information, eve
 
 ## 1. Manual Inspection (Top-K Review)
 
-This is the simplest and often most insightful method. For a small set of representative queries, you manually examine the documents retrieved by your vector store.
-
-### How to Do It
-1.  Define a small set of 5-10 "golden" test queries relevant to your knowledge base.
-2.  For each query, run your retrieval system and get the top `K` (e.g., 3-5) retrieved document chunks.
-3.  Manually read each retrieved chunk and determine if it helps answer the query. Categorize as "relevant," "partially relevant," or "irrelevant."
-
-### Python Example: Inspecting Retrieved Docs
+Keep it simple: run a tiny in-memory example and eyeball the ranked chunks.
 
 ```python
-import chromadb
-from sentence_transformers import SentenceTransformer
-from typing import List, Dict, Any
+# pip install scikit-learn
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
-# --- Configuration ---
-CHROMA_DB_PATH = "chroma_data/" # Path where your ChromaDB is stored
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
+docs = [
+    ("doc1", "The sky is blue because molecules scatter sunlight."),
+    ("doc2", "Plants make food through photosynthesis using sunlight."),
+    ("doc3", "HTTP GET retrieves data; POST sends data to the server.")
+]
 
-# --- Initialize Components ---
-model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-collection = client.get_or_create_collection("mini-rag-docs")
+corpus = [text for _, text in docs]
+ids = [doc_id for doc_id, _ in docs]
 
-def manual_inspect_retrieval(query: str, top_k: int = 3):
-    """
-    Performs retrieval and prints results for manual inspection.
-    """
-    query_embedding = model.encode([query]).tolist()
-    results = collection.query(
-        query_embeddings=query_embedding,
-        n_results=top_k,
-        include=['documents', 'metadatas']
-    )
-    
-    print(f"\n--- Query: '{query}' ---")
-    if results and results['documents'] and results['documents'][0]:
-        for i, doc_content in enumerate(results['documents'][0]):
-            metadata = results['metadatas'][0][i]
-            print(f"Rank {i+1} [Source: {metadata.get('source', 'unknown')ในการใช้งานจริง]:")
-            print(f"{doc_content[:200]}...\n") # Print first 200 chars for brevity
-    else:
-        print("No documents retrieved.")
+vectorizer = TfidfVectorizer()
+doc_vecs = vectorizer.fit_transform(corpus)
 
-# --- Example Usage (requires ChromaDB to be populated from ingest-chunk-embed.md) ---
-if __name__ == "__main__":
-    test_queries = [
-        "Why is the sky blue?",
-        "How do plants make food?",
-        "What is the capital of France?" # (Should ideally retrieve nothing if only RAG docs exist)
-    ]
-    
-    for q in test_queries:
-        manual_inspect_retrieval(q, top_k=2)
+def top_k(query: str, k: int = 2):
+    q_vec = vectorizer.transform([query])
+    scores = cosine_similarity(q_vec, doc_vecs).flatten()
+    order = np.argsort(-scores)[:k]
+    return [(ids[i], corpus[i], scores[i]) for i in order]
+
+for q in ["why is the sky blue", "how do plants make food", "what is http get"]:
+    print(f"\nQuery: {q}")
+    for rank, (doc_id, text, score) in enumerate(top_k(q, k=2), start=1):
+        print(f"  {rank}. {doc_id} (score={score:.2f}) -> {text[:80]}...")
 ```
 
 :::tip[What to Look For During Inspection]
@@ -100,69 +77,29 @@ For a predefined set of (query, expected_relevant_document_ID) pairs, you can ca
 2.  Run your retrieval system for each query.
 3.  Check if any of the expected relevant document IDs are present in the retrieved top `K` results.
 
-### Python Example: Hit Rate Calculation
+### Python Example: Hit Rate Calculation (in-memory)
 
 ```python
-import chromadb
-from sentence_transformers import SentenceTransformer
-from typing import List, Dict, Any, Tuple
+from typing import List, Tuple
 
-# --- Configuration (same as above) ---
-CHROMA_DB_PATH = "chroma_data/"
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
+test_set: List[Tuple[str, List[str]]] = [
+    ("why is the sky blue", ["doc1"]),
+    ("how do plants make food", ["doc2"]),
+    ("http methods", ["doc3"]),
+]
 
-model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
-collection = client.get_or_create_collection("mini-rag-docs")
-
-def calculate_hit_rate(
-    test_set: List[Tuple[str, List[str]]], # List of (query, [expected_doc_ids])
-    top_k: int = 3
-) -> float:
-    """
-    Calculates the hit rate for retrieval: how many queries retrieve at least one
-    expected relevant document in the top K.
-    """
+def hit_rate(test_set, k=2):
     hits = 0
-    for query, expected_ids in test_set:
-        query_embedding = model.encode([query]).tolist()
-        results = collection.query(
-            query_embeddings=query_embedding,
-            n_results=top_k,
-            include=['ids']
-        )
-        
-        retrieved_ids = results['ids'][0] if results and results['ids'] else []
-        
-        # Check if any of the expected IDs are in the retrieved IDs
-        if any(expected_id in retrieved_ids for expected_id in expected_ids):
+    for q, expected in test_set:
+        retrieved_ids = [doc_id for doc_id, _, _ in top_k(q, k)]
+        if any(e in retrieved_ids for e in expected):
             hits += 1
-            
-    hit_rate = hits / len(test_set)
-    print(f"Calculated Hit Rate @{top_k}: {hit_rate:.2f} ({hits}/{len(test_set)} queries were hits)")
-    return hit_rate
+    rate = hits / len(test_set)
+    print(f"Hit rate @{k}: {rate:.2f} ({hits}/{len(test_set)})")
+    return rate
 
-# --- Example Usage (requires ChromaDB to be populated) ---
 if __name__ == "__main__":
-    # Define a small test set with queries and their expected relevant document IDs
-    # (These IDs would come from your ingest script's output, e.g., 'demo.txt-chunk-0')
-    test_data = [
-        ("Why is the sky blue?", ["demo.txt-chunk-0"]), # Assuming demo.txt has sky info
-        ("How do plants make food?", ["biology.txt-chunk-0"]), # Assuming biology.txt has plant info
-        ("What is a language model?", ["ai_book.txt-chunk-0"]) # Hypothetical doc for LLM def
-    ]
-    # NOTE: You will need to create 'ai_book.txt' in your data/ folder
-    #       and run ingest_script.py before running this example.
-    
-    # Placeholder for a hypothetical doc in data/ai_book.txt
-    # with open("data/ai_book.txt", "w") as f:
-    #     f.write("A large language model is a type of AI program...")
-
-    # Calculate hit rate with top 1 result
-    hit_rate_at_1 = calculate_hit_rate(test_data, top_k=1)
-    
-    # Calculate hit rate with top 3 results
-    hit_rate_at_3 = calculate_hit_rate(test_data, top_k=3)
+    hit_rate(test_set, k=2)
 ```
 
 ---

@@ -29,7 +29,7 @@ Explain the context in which this pattern applies.
 
 ## When to Use
 
-| ✅ Use This Pattern When... | 🚫 Do Not Use When...              |
+| Good fit (use when...) | Avoid (not a fit when...)              |
 | :-------------------------- | :--------------------------------- |
 | **Condition A** is true     | _Condition B_ is present           |
 | You need **Outcome X**      | You are optimizing for _Outcome Y_ |

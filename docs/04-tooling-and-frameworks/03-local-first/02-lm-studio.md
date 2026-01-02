@@ -24,7 +24,7 @@ For developers who prefer a visual interface over command-line tools, LM Studio 
 
 ## When to Use
 
-| ✅ Use This Pattern When...                                 | 🚫 Do Not Use When...                                  |
+| Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | You prefer a GUI for managing and interacting with local LLMs | You need a headless, scriptable solution for automated local inference (Ollama might be more suitable) |
 | Experimenting with different open-source LLMs without needing command-line expertise | Your hardware lacks sufficient CPU, RAM, or GPU to run even smaller models efficiently |

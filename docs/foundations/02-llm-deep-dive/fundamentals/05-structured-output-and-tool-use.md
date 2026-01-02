@@ -26,7 +26,7 @@ While LLMs excel at generating free-form text, many GenAI & LLM Documentation ta
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Generating API requests or data models | The LLM's output is purely for human consumption (e.g., creative writing) |
 | Automating code generation or refactoring | The external tool requires complex human judgment for every step |

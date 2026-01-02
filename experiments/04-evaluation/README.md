@@ -67,6 +67,10 @@ python eval_rag.py
 
 You’ll get Recall@3. Adjust `k` and expand the eval set as needed.
 
+## Notebook (quick start)
+
+- Open `experiments/local/rag-eval-mini.ipynb` for a toy, in-memory recall@k check using TF-IDF. Swap in your chunks/IDs to sanity check retrieval before wiring real embeddings.
+
 ## Quick Answer Rubric (manual or LLM judge)
 
 - Correctness: Does the answer match the source?

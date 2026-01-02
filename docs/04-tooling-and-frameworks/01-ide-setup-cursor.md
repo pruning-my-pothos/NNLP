@@ -26,7 +26,7 @@ While GenAI & LLM Documentation is tool-agnostic, the choice of development envi
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Developing with GenAI & LLM Documentation                                 | Your team explicitly prohibits the use of AI-integrated IDEs |
 | Needing seamless context injection for AI  | Your primary task is purely manual (e.g., hardware setup) |

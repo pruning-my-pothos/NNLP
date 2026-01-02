@@ -26,7 +26,7 @@ Automated tests are the bedrock of reliable software. AI can be a powerful co-pi
 
 ## When to Use
 
-| ✅ Use This Pattern When...           | 🚫 Do Not Use When...                     |
+| Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Developing new features (TDD approach) | You have no understanding of the code being tested |
 | Fixing bugs (regression tests)        | The code is trivial and self-evidently correct |
