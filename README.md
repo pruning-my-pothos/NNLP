@@ -57,6 +57,33 @@ I don’t treat “prompting” as chat. I treat it as wiring: constraints first
 
 Docs site: https://pruning-my-pothos.github.io/gen-ai-llm-docs/ (baseUrl: `/gen-ai-llm-docs/`)
 
+### Handbook at a glance
+
+| Section | What it covers | First link |
+| :-- | :-- | :-- |
+| Start Here | Orientation, scope, glossary, style, map | `/docs/00-handbook-introduction/site-map` |
+| Method | Loop, artifacts, delegation, evaluation | `/docs/01-handbook-method/01-overview` |
+| Patterns | Step-by-step recipes for common tasks | `/docs/02-execution-patterns/00-pattern-index` |
+| Scenarios | Role-based examples and case studies | `/docs/03-professional-scenarios/00-scenarios-index` |
+| Tooling | IDE/CLI agents, frameworks, local-first | `/docs/04-tooling-and-frameworks/00-tooling-index` |
+| Responsible AI | Guardrails, governance, risk | `/docs/05-responsible-ai/` |
+| Templates | Copy/paste specs, prompts, checklists | `/docs/06-templates/00-templates-index` |
+| Code & Snippets | Runnable how-tos, skeletons, safety | `/docs/08-code-and-snippets/` |
+| Experiments | Hands-on labs and demos | `/docs/experiments/00-index` |
+| Foundations | LLM/NLP background | `/docs/foundations/02-llm-deep-dive` |
+
+```mermaid
+flowchart LR
+    Intent[Intent] --> Constraints[Constraints]
+    Constraints --> Generate[Generate]
+    Generate --> Review[Review & Evidence]
+    Review --> Release[Release & Iterate]
+    Release --> Intent
+
+    classDef node fill:#e5e7ff,stroke:#4338ca,color:#0f172a;
+    class Intent,Constraints,Generate,Review,Release node;
+```
+
 What you’ll find:
 
 - **Start Here**: why this exists and who it serves.
@@ -90,6 +117,21 @@ If you want to apply it now:
 - Execution Patterns: `docs/02-execution-patterns/00-pattern-index.md`
 - Templates for artifacts: `docs/06-templates/00-templates-index.md`
 - Quick code/prompts: `docs/08-code-and-snippets/`
+
+## Key paths (repo)
+
+| Path | Purpose |
+| :-- | :-- |
+| `docs/00-handbook-introduction/` | Orientation, glossary, style, map |
+| `docs/01-handbook-method/` | Core loop, artifacts, delegation, evaluation |
+| `docs/02-execution-patterns/` | Task-specific playbooks |
+| `docs/03-professional-scenarios/` | Role-based scenarios and case studies |
+| `docs/04-tooling-and-frameworks/` | IDE/CLI agents, orchestration, local-first |
+| `docs/05-responsible-ai/` | Guardrails, governance, risk |
+| `docs/06-templates/` | Copy/paste specs and checklists |
+| `docs/08-code-and-snippets/` | Runnable snippets, skeletons, safety patterns |
+| `docs/experiments/` | Hands-on labs and demos |
+| `website/` | Docusaurus site (build with `npm run build`) |
 
 ## Quickstart: run the Handbook on a real task
 
