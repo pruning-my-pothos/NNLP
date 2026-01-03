@@ -1,5 +1,5 @@
 ---
-title: "GenAI & LLM Handbook Agent Instructions for Codex"
+title: "GenAI & LLM Handbook Agent Instructions"
 archetype: "tooling"
 status: "active"
 owner: "Shailesh (Shaily)"
@@ -9,13 +9,13 @@ tags: ["genai-llm", "codex", "agents", "cli", "workflow", "guardrails"]
 last_reviewed: "2025-12-20"
 ---
 
-# agents.md (Codex Agents)
+# agents.md (All Agents)
 
 ## Overview
 
-This file defines how Codex agents should behave inside this repo.
+This file defines how any local agent should behave inside this repo (CLI, IDE-integrated, or similar).
 
-GenAI & LLM Handbook assumes AI can execute, but humans own:
+GenAI & LLM Handbook assumes AI can execute, but I own:
 
 - intent
 - trade-offs

@@ -15,12 +15,12 @@ last_reviewed: "2025-12-20"
 ## Overview
 
 :::info[Purpose]
-Guardrails for any CLI-based agent (Codex CLI, Aider, Claude Code/terminal, similar) operating in this repo.
+Guardrails for any CLI-based agent (Codex CLI, Aider, Claude Code/terminal, or similar) operating in this repo.
 :::
 
 This file defines how CLI-based agents should behave inside this repo.
 
-GenAI & LLM Handbook assumes AI can execute, but humans own:
+GenAI & LLM Handbook assumes AI can execute, but I own:
 
 - intent
 - trade-offs
