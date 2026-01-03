@@ -29,7 +29,7 @@ Traditional threat modeling can be resource-intensive. For AI-assisted developme
 | Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
 | Delegating code generation to AI      | You are developing a simple, non-sensitive internal tool without external access |
-| Handling sensitive data with AI       | A full, comprehensive threat model is already in progress by a dedicated security team |
+| Handling sensitive data with AI       | A full, thorough threat model is already in progress by a dedicated security team |
 | Integrating third-party AI APIs       | The AI functionality is purely passive (e.g., simple text summarization of public data) |
 
 ---

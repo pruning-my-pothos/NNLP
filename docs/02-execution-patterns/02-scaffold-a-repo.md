@@ -37,7 +37,7 @@ Starting a new project often involves repetitive setup tasks: creating directori
 ## Prerequisites
 
 :::warning[Before you start]
-A comprehensive **Constraint Spec** and an **Intent Spec** for the project's core purpose are essential.
+A thorough **Constraint Spec** and an **Intent Spec** for the project's core purpose are essential.
 :::
 
 - **Artifacts**: Intent Spec (high-level project goal), detailed Constraint Spec (tech stack, coding standards, directory conventions, desired tooling).

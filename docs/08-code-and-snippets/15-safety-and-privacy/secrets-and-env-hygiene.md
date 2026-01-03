@@ -88,7 +88,7 @@ It is absolutely critical to add `.env` to your project's `.gitignore` file to p
 
 .env # Ignore all .env files
 ```
-Refer to the [.gitignore Templates](../02-git-basics/gitignore-templates.md) for more comprehensive examples.
+Refer to the [.gitignore Templates](../02-git-basics/gitignore-templates.md) for more thorough examples.
 
 ---
 

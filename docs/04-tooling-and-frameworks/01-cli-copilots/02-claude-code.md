@@ -66,7 +66,7 @@ Specify Claude's role, permissions, and prohibitions. Given Claude's strong reas
 
 ### 3. Generation Request (Leveraging Context)
 
-When formulating your prompt, provide comprehensive context, including multiple files or long sections of code. Claude's large context window can handle this.
+When formulating your prompt, provide thorough context, including multiple files or long sections of code. Claude's large context window can handle this.
 
 ```text
 # Example Prompt for Claude via Aider

@@ -133,7 +133,7 @@ print("Final Response:", response)
 ---
 
 :::tip[Log All Failures]
-Regardless of your fallback strategy, always log comprehensive details of the LLM failure (input, output, error messages, retry attempts). This data is invaluable for debugging, improving your prompts, and understanding model limitations.
+Regardless of your fallback strategy, always log thorough details of the LLM failure (input, output, error messages, retry attempts). This data is invaluable for debugging, improving your prompts, and understanding model limitations.
 :::
 
 :::warning[User Experience is Key]

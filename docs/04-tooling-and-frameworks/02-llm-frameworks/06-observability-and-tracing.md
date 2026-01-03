@@ -17,7 +17,7 @@ Gain deep insights into the behavior, performance, and cost of your LLM applicat
 
 Unlike traditional software, LLM applications introduce new layers of complexity: probabilistic outputs, multi-stage reasoning, tool use, and interactions with external knowledge bases. Debugging and optimizing these systems requires specialized observability beyond standard logs and metrics. Observability and tracing for LLM applications provide visibility into the entire lifecycle of an LLM call, including prompt inputs, model outputs, token usage, latency, tool calls, and RAG retrieval steps. This guide explores the importance and methods for achieving robust observability in your LLM solutions.
 
-**Goal**: Implement comprehensive observability and tracing for LLM applications to effectively debug, optimize, and ensure the reliability and cost-efficiency of AI-powered features.
+**Goal**: Implement thorough observability and tracing for LLM applications to effectively debug, optimize, and ensure the reliability and cost-efficiency of AI-powered features.
 **Anti-pattern**: Treating LLM applications as black boxes, deploying them without adequate monitoring, leading to "ghost in the machine" issues, unmanaged costs, and difficulty in diagnosing failures.
 
 ---

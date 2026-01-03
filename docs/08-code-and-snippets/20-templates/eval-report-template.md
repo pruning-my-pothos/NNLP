@@ -11,7 +11,7 @@ last_reviewed: "2025-12-31"
 
 # LLM Evaluation Report Template
 
-This template provides a structured format for documenting the results of an LLM or RAG evaluation run. A comprehensive report is essential for communicating performance, identifying trends, and making data-driven decisions about model, prompt, or pipeline improvements.
+This template provides a structured format for documenting the results of an LLM or RAG evaluation run. A thorough report is essential for communicating performance, identifying trends, and making data-driven decisions about model, prompt, or pipeline improvements.
 
 :::info[The Goal: Clear Communication of Performance]
 The objective is to systematically summarize the outcomes of your LLM evaluations, providing stakeholders with a clear understanding of quality, identifying regressions, and guiding future development efforts.

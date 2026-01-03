@@ -17,7 +17,7 @@ Automate the generation and maintenance of crucial runbooks and operational docu
 
 Operational documentation, particularly runbooks, is vital for maintaining system stability and responding effectively to incidents. However, keeping these documents current with rapidly evolving systems is a significant challenge. This scenario demonstrates how AI/LLM can analyze various sources—codebases, logs, monitoring alerts, and past incident reports—to automatically draft, update, and verify runbooks, ensuring that operations teams always have accurate and actionable guidance.
 
-**Goal**: Maintain a comprehensive and up-to-date suite of runbooks and operational documentation with minimal manual effort, significantly improving incident response times and system reliability.
+**Goal**: Maintain a thorough and up-to-date suite of runbooks and operational documentation with minimal manual effort, significantly improving incident response times and system reliability.
 **Anti-pattern**: Relying on manually maintained, often outdated, runbooks that lead to confusion, incorrect actions, and prolonged outages during incidents.
 
 ---

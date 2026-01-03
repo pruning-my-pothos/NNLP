@@ -23,7 +23,7 @@ The objective is to gain deep visibility into your LLM's behavior, resource cons
 
 -   [**Logging Tokens and Latency**](./token-and-latency-logging.md): Integrate essential metrics like input/output token counts, Time to First Token (TTFT), and Time to Last Token (TLFT) into your structured logs for detailed cost and performance analysis.
 
--   [**Capturing LLM Run Metadata and Configuration**](./run-metadata-and-config-capture.md): Go beyond basic prompts and responses by logging comprehensive contextual information, including model parameters, application context, and RAG details, for enhanced reproducibility and debugging.
+-   [**Capturing LLM Run Metadata and Configuration**](./run-metadata-and-config-capture.md): Go beyond basic prompts and responses by logging thorough contextual information, including model parameters, application context, and RAG details, for enhanced reproducibility and debugging.
 
 -   [**PII Redaction Basics for LLM Logs**](./pii-redaction-basics.md): Implement critical privacy safeguards by learning techniques (keyword/regex replacement, masking) to remove Personally Identifiable Information from your logs *before* storage.
 

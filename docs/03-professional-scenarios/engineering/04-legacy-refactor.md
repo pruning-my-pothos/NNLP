@@ -41,7 +41,7 @@ This iterative process helps manage the risks and complexities of refactoring, e
 | :------------------------ | :------------------------------------ | :----------------------------------- | :---------------------------- |
 | **1. Assess & Prioritize Debt** | Identify pain points, analyze codebase, prioritize areas for refactor | Technical Debt Backlog, Impact Analysis | Wasting effort on low-value areas |
 | **2. Define Target State (AI/LLM Vision)** | Envision modernized system, identify AI/LLM integration points | Target Architecture, AI/LLM Use Cases | Aimless refactoring, missed opportunities |
-| **3. Establish Safety Net** | Implement comprehensive tests, monitoring, rollback plans | Test Suite, Monitoring Dashboards    | Introducing new bugs, system instability |
+| **3. Establish Safety Net** | Implement thorough tests, monitoring, rollback plans | Test Suite, Monitoring Dashboards    | Introducing new bugs, system instability |
 | **4. Isolate Components (Strangler Pattern)** | Decouple parts of the legacy system for independent refactor | Clear Boundaries, New Services       | "Big Bang" failure, tight coupling |
 | **5. Incremental Refactor & Modernize** | Rewrite, optimize, and introduce new patterns/tech stack | Modernized Components, Reduced Debt  | Uncontrolled changes, lack of progress |
 | **6. Integrate AI/LLM (as applicable)** | Embed new AI/LLM features or use AI for code migration | AI/LLM-enabled Features/Tools      | Superficial integration, added complexity |
@@ -84,7 +84,7 @@ graph TD
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **Lack of Clear Scope or Vision** | Endless refactoring, no clear end goal, "yak shaving". | Define a clear target state and prioritize refactoring efforts based on business value. |
-| **Inadequate Test Coverage** | Introducing regressions; fear of making changes. | Prioritize writing comprehensive tests (unit, integration, end-to-end) before refactoring. |
+| **Inadequate Test Coverage** | Introducing regressions; fear of making changes. | Prioritize writing thorough tests (unit, integration, end-to-end) before refactoring. |
 | **Ignoring the Strangler Fig Pattern** | Attempting large-scale rewrites, high risk of failure. | Break down refactoring into small, manageable pieces; use facade patterns to isolate changes. |
 | **Not Involving Business Stakeholders** | Refactoring decisions not aligned with business needs; perceived lack of progress. | Regularly communicate progress and value delivered to business stakeholders. |
 | **Over-reliance on AI for Complex Refactoring** | AI tools can assist but require human oversight; potential for subtle errors in generated code. | Use AI for analysis, pattern identification, or code generation for well-understood tasks; always review critically. |

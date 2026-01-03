@@ -27,7 +27,7 @@ Aider stands out among CLI copilots for its deep integration with `git` and its 
 | Good fit (use when...)                                 | Avoid (not a fit when...)                                  |
 | :--------------------------------------------------------- | :----------------------------------------------------- |
 | Performing multi-file code modifications or refactorings   | The task is a simple, single-line change that is faster to do manually |
-| Generating comprehensive test suites for new or existing code | You prefer a purely non-interactive, fire-and-forget code generation approach |
+| Generating thorough test suites for new or existing code | You prefer a purely non-interactive, fire-and-forget code generation approach |
 | Needing a highly interactive dialogue with the AI about code changes | You are working on highly sensitive data that requires strict isolation (consider local inference models) |
 | Automating complex tasks where the AI needs to read and write multiple files | The AI is expected to *design* the architecture or make strategic product decisions |
 

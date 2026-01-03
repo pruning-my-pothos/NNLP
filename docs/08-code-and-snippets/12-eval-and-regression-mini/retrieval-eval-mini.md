@@ -174,5 +174,5 @@ If your retrieval metrics are low, consider:
 :::
 
 :::warning[Limitations of Simplified Metrics]
-These simplified metrics (Hit Rate, MRR) provide a good starting point. For comprehensive, production-grade RAG evaluation, consider using advanced frameworks like [RAGAS](https://docs.ragas.io/en/latest/) or LlamaIndex's evaluation modules, which assess aspects like context relevance, faithfulness, and answer correctness.
+These simplified metrics (Hit Rate, MRR) provide a good starting point. For thorough, production-grade RAG evaluation, consider using advanced frameworks like [RAGAS](https://docs.ragas.io/en/latest/) or LlamaIndex's evaluation modules, which assess aspects like context relevance, faithfulness, and answer correctness.
 :::

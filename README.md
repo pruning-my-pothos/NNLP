@@ -201,7 +201,7 @@ This is an open-source project. We welcome contributions from:
 - **DevOps/Platform Engineers** automating with AI
 - **Anyone** working with LLMs in a professional capacity
 
-Join the discussion on GitHub and help us build the definitive guide for practical GenAI & LLM Handbook!
+Join the discussion on GitHub and help us build the authoritative guide for practical GenAI & LLM Handbook!
 
 ---
 

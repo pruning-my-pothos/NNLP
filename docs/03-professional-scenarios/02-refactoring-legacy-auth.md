@@ -42,7 +42,7 @@ Teams dealing with legacy authentication face:
 | High-risk changes         | Unforeseen regressions            | **Refactor Safely Pattern**: Characterization tests as safety net |
 | Code entanglement         | Difficulty in isolating logic     | **The Strangler Pattern**: Incremental replacement with abstraction |
 | Security vulnerabilities  | Exposing new attack vectors        | **Constraint Spec**: Enforce modern security practices          |
-| Lack of test coverage     | Blind refactoring                 | **Write Tests Pattern**: Generate comprehensive test suite        |
+| Lack of test coverage     | Blind refactoring                 | **Write Tests Pattern**: Generate thorough test suite        |
 
 ---
 
@@ -53,7 +53,7 @@ Teams dealing with legacy authentication face:
 Before touching the code, capture its current behavior.
 
 **Prompt to AI (Characterization Tests):**
-> "Analyze the attached `LegacyAuthService.java` file. It handles user login, password hashing, and session management. Generate a comprehensive suite of JUnit 5 tests that covers all public methods and known edge cases, including valid/invalid credentials, session expiry, and error conditions. Treat the current implementation as the source of truth for behavior."
+> "Analyze the attached `LegacyAuthService.java` file. It handles user login, password hashing, and session management. Generate a thorough suite of JUnit 5 tests that covers all public methods and known edge cases, including valid/invalid credentials, session expiry, and error conditions. Treat the current implementation as the source of truth for behavior."
 
 **(AI generates `LegacyAuthServiceTest.java`.)**
 

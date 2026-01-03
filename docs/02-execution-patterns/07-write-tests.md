@@ -12,14 +12,14 @@ last_reviewed: "2025-12-28"
 
 
 :::info[Value Proposition]
-Use this pattern to leverage AI for generating comprehensive and effective tests. This accelerates the test-writing process, improves code coverage, and ensures functional correctness, especially when paired with AI-generated code or complex logic.
+Use this pattern to leverage AI for generating thorough and effective tests. This accelerates the test-writing process, improves code coverage, and ensures functional correctness, especially when paired with AI-generated code or complex logic.
 :::
 
 ## Overview
 
 Automated tests are the bedrock of reliable software. AI can be a powerful co-pilot in writing various types of tests (unit, integration, end-to-end) by analyzing code, requirements, or even desired behavior. This pattern focuses on guiding the AI to produce high-quality, maintainable tests that act as living documentation and a safety net for future changes.
 
-**Goal**: Generate effective and comprehensive test suites based on code or specifications.
+**Goal**: Generate effective and thorough test suites based on code or specifications.
 **Anti-pattern**: Asking the AI to "write tests for this" without providing context, desired outcomes, or testing framework preferences, leading to generic and often inadequate tests.
 
 ---

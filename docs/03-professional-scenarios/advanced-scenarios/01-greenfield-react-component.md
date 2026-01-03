@@ -82,7 +82,7 @@ Leverage AI to scaffold the complex component.
 
 **(AI generates `RealtimeSearchInput.tsx` and `RealtimeSearchInput.i18n.ts`.)**
 
-### 4. Generate Comprehensive Test Suite (Performance & i18n)
+### 4. Generate Thorough Test Suite (Performance & i18n)
 
 Beyond basic unit tests, generate performance and internationalization tests.
 

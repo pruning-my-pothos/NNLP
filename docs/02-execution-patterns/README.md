@@ -68,7 +68,7 @@ Patterns are organized by the primary goal they help achieve.
     -   `docs/02-execution-patterns/06-debug-with-evidence.md`
 -   **The Rubber Duck**: Using AI to explain complex code or problems.
     -   `docs/02-execution-patterns/07-rubber-duck.md`
--   **Write Tests**: Generating comprehensive test suites.
+-   **Write Tests**: Generating thorough test suites.
     -   `docs/02-execution-patterns/07-write-tests.md`
 -   **Write Docs**: Generating accurate and maintainable documentation from code.
     -   `docs/02-execution-patterns/08-write-docs.md`

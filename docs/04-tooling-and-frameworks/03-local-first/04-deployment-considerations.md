@@ -112,7 +112,7 @@ graph LR
 | **Under-provisioning Hardware** | Poor performance, queuing, service degradation. | Perform load testing; right-size your GPUs and memory based on model requirements and expected traffic. |
 | **Ignoring Security Best Practices** | Unauthorized access, data breaches, compliance violations. | Implement network segmentation, API authentication, and regular security audits for LLM endpoints. |
 | **Lack of Model Versioning** | Inconsistent behavior across environments; difficulty in debugging and rollback. | Use model registries; version control model artifacts (weights, configs, code). |
-| **"Black Box" Deployment** | Inability to debug or understand why deployed LLMs are behaving unexpectedly. | Implement comprehensive observability and tracing from the start, linking back to GenAI & LLM Handbook. |
+| **"Black Box" Deployment** | Inability to debug or understand why deployed LLMs are behaving unexpectedly. | Implement thorough observability and tracing from the start, linking back to GenAI & LLM Handbook. |
 
 ---
 

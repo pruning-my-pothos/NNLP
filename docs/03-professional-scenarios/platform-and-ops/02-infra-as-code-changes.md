@@ -80,7 +80,7 @@ graph TD
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **AI generating insecure or non-compliant IaC** | Cloud environment exposed to vulnerabilities, regulatory fines. | Human security review is paramount. Integrate AI with existing security tooling (e.g., `checkov`, `tfsec`). |
-| **AI misinterpreting intent, leading to incorrect IaC** | Deploying infrastructure that doesn't meet requirements or breaks existing systems. | Provide highly specific Intent and Constraint Specs. Use AI for drafting, not definitive generation without human validation. |
+| **AI misinterpreting intent, leading to incorrect IaC** | Deploying infrastructure that doesn't meet requirements or breaks existing systems. | Provide highly specific Intent and Constraint Specs. Use AI for drafting, not authoritative generation without human validation. |
 | **Ignoring the blast radius of IaC changes** | Changes impact production services unintentionally. | Implement dry runs (`terraform plan`), robust testing, and staged deployments. AI can help simulate impact. |
 | **Over-reliance on AI for cost optimization** | AI may suggest optimizations that compromise performance or reliability. | Human engineers must balance cost efficiency with performance, reliability, and security requirements. |
 

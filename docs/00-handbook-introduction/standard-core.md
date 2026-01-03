@@ -17,7 +17,7 @@ Use this as the fast entry point to the normative GenAI & LLM Handbook standard.
 
 ## Overview
 
-The GenAI & LLM Handbook standard is comprehensive, but you don't need to read every document to start applying it. This "Standard Core" provides a curated list of essential documents that, when understood and applied, form the bedrock of effective and safe GenAI & LLM Handbook practice.
+The GenAI & LLM Handbook standard is thorough, but you don't need to read every document to start applying it. This "Standard Core" provides a curated list of essential documents that, when understood and applied, form the bedrock of effective and safe GenAI & LLM Handbook practice.
 
 **Goal**: Provide a minimal, high-impact set of documents for quick adoption of the GenAI & LLM Handbook.
 **Anti-pattern**: Feeling overwhelmed by the volume of content and not knowing where to start.

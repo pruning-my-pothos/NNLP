@@ -10,7 +10,7 @@ last_reviewed: "2025-12-28"
 ---
 
 :::info[Value Proposition]
-Safely and comprehensively refactor a critical, complex legacy authentication system, deeply integrating advanced security measures and ensuring stringent regulatory compliance. This leverages AI for sophisticated vulnerability analysis, compliance checking, and secure migration strategies, minimizing high-stakes regressions and legal exposure.
+Safely and thoroughly refactor a critical, complex legacy authentication system, deeply integrating advanced security measures and ensuring stringent regulatory compliance. This leverages AI for sophisticated vulnerability analysis, compliance checking, and secure migration strategies, minimizing high-stakes regressions and legal exposure.
 :::
 
 ## Overview
@@ -31,7 +31,7 @@ At an advanced level, refactoring legacy authentication involves:
 -   **Advanced Threat Modeling**: Identifying obscure attack vectors, insider threats, and sophisticated phishing/social engineering attempts that bypass basic security measures.
 -   **Multi-Factor Authentication (MFA) & Single Sign-On (SSO) Integration**: Seamlessly integrating with modern identity providers and providing a robust, user-friendly MFA experience.
 -   **Decoupling Entitlement/Authorization**: Separating authentication from fine-grained authorization policies, often intertwined in legacy systems.
--   **Auditing and Logging**: Implementing comprehensive, tamper-proof logging for all security-sensitive events, crucial for forensics and compliance.
+-   **Auditing and Logging**: Implementing thorough, tamper-proof logging for all security-sensitive events, crucial for forensics and compliance.
 
 ---
 
@@ -50,7 +50,7 @@ At an advanced level, refactoring legacy authentication involves:
 
 ## Step-by-Step Advanced Scenario
 
-### 1. Comprehensive Legacy System Characterization & Audit
+### 1. Thorough Legacy System Characterization & Audit
 
 Beyond basic characterization tests, perform a deep audit for security flaws and compliance gaps.
 

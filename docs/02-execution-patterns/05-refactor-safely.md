@@ -96,7 +96,7 @@ flowchart LR
 
 1.  **Initial Characterization Test Prompt:**
     ```markdown
-    "Given the following JavaScript function, `calculateFinalPrice`, write a comprehensive set of unit tests using Jest that covers all its current inputs and outputs, including edge cases and known behavior (even if it's currently buggy). Treat the function's existing behavior as the ground truth.
+    "Given the following JavaScript function, `calculateFinalPrice`, write a thorough set of unit tests using Jest that covers all its current inputs and outputs, including edge cases and known behavior (even if it's currently buggy). Treat the function's existing behavior as the ground truth.
 
     ```javascript
     // Original function

@@ -19,7 +19,7 @@ The objective is to equip you with quick diagnostic steps and proven fixes for f
 
 ## Guides and Snippets
 
--   [**Common LLM Errors and Quick Fixes**](./common-errors-and-fixes.md): A comprehensive guide to common API connection errors, model loading failures, context window exceeded issues, and invalid JSON outputs, along with their solutions.
+-   [**Common LLM Errors and Quick Fixes**](./common-errors-and-fixes.md): A thorough guide to common API connection errors, model loading failures, context window exceeded issues, and invalid JSON outputs, along with their solutions.
 
 -   [**Dependency Hell Playbook for Python**](./dependency-hell-playbook.md): A structured approach to diagnose and resolve Python package conflicts, ensuring stable and isolated development environments.
 

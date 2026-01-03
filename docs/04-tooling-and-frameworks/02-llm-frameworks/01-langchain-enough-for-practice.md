@@ -10,7 +10,7 @@ last_reviewed: "2025-12-28"
 ---
 
 :::info[Value Proposition]
-LangChain provides a comprehensive framework for building LLM-powered applications, enabling complex chains of interactions, agentic behaviors, and seamless integration with external data sources. Understanding LangChain is crucial for translating GenAI & LLM Handbook principles into scalable, production-ready AI systems, especially when orchestrating multiple prompts and tools.
+LangChain provides a thorough framework for building LLM-powered applications, enabling complex chains of interactions, agentic behaviors, and seamless integration with external data sources. Understanding LangChain is crucial for translating GenAI & LLM Handbook principles into scalable, production-ready AI systems, especially when orchestrating multiple prompts and tools.
 :::
 
 ## Overview

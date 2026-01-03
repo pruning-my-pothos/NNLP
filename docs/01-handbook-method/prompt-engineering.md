@@ -135,7 +135,7 @@ flowchart LR
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **"Chatting" with AI**    | Inconsistent, unreliable outputs.        | Treat AI interaction as a structured request, not a conversation. |
-| **Omitting Constraints**  | AI generates code that doesn't fit the project or is insecure. | Always provide a comprehensive Constraint Spec. |
+| **Omitting Constraints**  | AI generates code that doesn't fit the project or is insecure. | Always provide a thorough Constraint Spec. |
 | **Lack of Clarity**       | Ambiguous instructions lead to guessing by AI. | Be explicit. Use deterministic language and clear structures. |
 
 ---

@@ -15,7 +15,7 @@ Provide a structured, end-to-end methodology for designing, developing, and depl
 
 ## Overview
 
-Developing a greenfield AI/LLM service presents unique opportunities and challenges. Unlike integrating AI into existing systems, a greenfield project allows for optimal architectural choices, technology stack selection, and a strong emphasis on AI-first design principles. This scenario guides through the comprehensive lifecycle of building such a service, ensuring responsible AI practices and efficient resource utilization from inception.
+Developing a greenfield AI/LLM service presents unique opportunities and challenges. Unlike integrating AI into existing systems, a greenfield project allows for optimal architectural choices, technology stack selection, and a strong emphasis on AI-first design principles. This scenario guides through the thorough lifecycle of building such a service, ensuring responsible AI practices and efficient resource utilization from inception.
 
 **Goal**: Successfully launch a high-quality, scalable, and impactful greenfield AI/LLM service that addresses a specific user need or business problem.
 **Anti-pattern**: Rushing into model selection or development without clear problem definition, architectural planning, and robust evaluation strategies, leading to costly reworks or project failure.

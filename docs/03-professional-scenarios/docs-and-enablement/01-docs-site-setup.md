@@ -79,7 +79,7 @@ graph TD
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **Vague AI Prompts**      | AI generates irrelevant or unhelpful content/structure. | Provide highly specific prompts, including desired headings, sections, and source material. |
-| **Over-reliance on AI for factual accuracy** | AI-generated content may contain hallucinations or inaccuracies. | Human review and fact-checking are indispensable; use AI for drafting, not definitive statements. |
+| **Over-reliance on AI for factual accuracy** | AI-generated content may contain hallucinations or inaccuracies. | Human review and fact-checking are indispensable; use AI for drafting, not authoritative statements. |
 | **Ignoring existing content/style guides** | AI generates content inconsistent with brand voice or existing technical style. | Feed AI existing documentation, style guides, and glossaries as context for generation. |
 | **Lack of clear site navigation/taxonomy** | Users can't find information, leading to frustration. | Define a clear site map and navigation structure (table of contents, sidebars) early in the Constraint Spec. |
 

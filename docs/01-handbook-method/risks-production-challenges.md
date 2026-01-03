@@ -96,7 +96,7 @@ The GenAI & LLM Handbook Loop explicitly addresses many of these challenges:
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **Ignoring AI-Specific Risks** | Unexpected failures, data breaches, ethical harms. | Proactively threat model for LLM-specific risks (e.g., prompt injection). |
-| **Lack of Observability** | Inability to debug, optimize, or understand AI behavior in production. | Implement comprehensive logging, metrics, and tracing for LLM applications. |
+| **Lack of Observability** | Inability to debug, optimize, or understand AI behavior in production. | Implement thorough logging, metrics, and tracing for LLM applications. |
 | **Assuming Static Performance** | Model performance degrades over time without detection. | Implement continuous evaluation and monitoring for model drift. |
 | **Underestimating Cost**  | Uncontrolled cloud spend or resource drain. | Implement cost tracking, token limits, and utilize smaller/optimized models where appropriate. |
 

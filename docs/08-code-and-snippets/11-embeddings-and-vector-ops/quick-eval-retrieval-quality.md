@@ -73,7 +73,7 @@ for q in ["why is the sky blue", "how do plants make food", "what is http get"]:
 For a predefined set of (query, expected_relevant_document_ID) pairs, you can calculate a simple "hit rate" to see how often your system retrieves at least one of the truly relevant documents within the top `K` results.
 
 ### How to Do It
-1.  Create a small "ground truth" dataset: a list of queries, and for each query, the ID(s) of the document(s) that are *definitively relevant*.
+1.  Create a small "ground truth" dataset: a list of queries, and for each query, the ID(s) of the document(s) that are *authoritatively relevant*.
 2.  Run your retrieval system for each query.
 3.  Check if any of the expected relevant document IDs are present in the retrieved top `K` results.
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 ---
 
 :::warning[Limitations of Quick Evaluation]
-These methods are great for quick sanity checks but do not replace comprehensive evaluation.
+These methods are great for quick sanity checks but do not replace thorough evaluation.
 -   **Subjectivity**: Manual inspection is subjective and not scalable.
 -   **Incompleteness**: Hit rate only tells you if *any* relevant document was found, not if *all* were, or if irrelevant ones were also highly ranked.
 

@@ -30,7 +30,7 @@ Applying GenAI & LLM in *complex* professional settings involves more than just 
 
 | Good fit (use when...)           | Avoid (not a fit when...)                     |
 | :------------------------------------ | :---------------------------------------- |
-| Learning how to apply GenAI & LLM to your specific role | You are looking for a definitive, single answer to every problem |
+| Learning how to apply GenAI & LLM to your specific role | You are looking for a authoritative, single answer to every problem |
 | Onboarding new team members to AI-assisted workflows | The scenario perfectly matches a simple Execution Pattern |
 | Understanding the trade-offs and nuances of AI-assisted development | You are purely interested in the technical mechanics of LLMs |
 

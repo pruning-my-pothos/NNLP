@@ -17,7 +17,7 @@ Bridge the gap between initial problem discovery and a concrete Product Requirem
 
 Product discovery often starts with ambiguous problems or broad user needs. Transforming these into a clear, concise problem statement and then into a detailed PRD requires significant effort in research, analysis, and synthesis. This scenario demonstrates how AI/LLM can act as a powerful co-creator and analytical engine, assisting product managers and UX designers in refining problem definitions, generating user stories, identifying key metrics, and outlining potential solutions, thus expediting the crucial early stages of product development.
 
-**Goal**: Convert an initial, loosely defined problem or user need into a well-structured and comprehensive PRD, validated against user pain points and business objectives, with AI/LLM assistance.
+**Goal**: Convert an initial, loosely defined problem or user need into a well-structured and thorough PRD, validated against user pain points and business objectives, with AI/LLM assistance.
 **Anti-pattern**: Jumping directly to solution brainstorming without thoroughly understanding and framing the problem, leading to misaligned features, wasted development effort, and products that fail to meet user needs.
 
 ---
@@ -44,7 +44,7 @@ This iterative process integrates AI/LLM into the initial product definition and
 | **3. Intent & Constraint Spec Generation** | Define desired outcomes, success metrics, technical/business boundaries | Intent Spec, Constraint Spec         | Building the wrong thing, scope creep |
 | **4. AI-Assisted User Story/Requirement Drafting** | AI generates user stories, functional/non-functional requirements | Draft User Stories, Requirements     | Generic or incomplete requirements |
 | **5. Human Review & Validation** | Product Managers/UX review, validate against research, prioritize | Validated Requirements, Prioritized Backlog | Missing critical details, unfeasible solutions |
-| **6. AI-Assisted PRD Assembly & Refinement** | AI compiles, structures, and refines the full PRD document | Comprehensive PRD                  | Inconsistent document, formatting issues |
+| **6. AI-Assisted PRD Assembly & Refinement** | AI compiles, structures, and refines the full PRD document | Thorough PRD                  | Inconsistent document, formatting issues |
 
 ---
 
@@ -71,7 +71,7 @@ graph TD
 -   **Enhanced Clarity**: Forces a rigorous approach to problem definition, leading to clearer requirements.
 -   **Improved Alignment**: Ensures that solutions are tightly coupled to validated user needs and business objectives.
 -   **Reduced Risk of Rework**: Catches fundamental misunderstandings early, before significant development investment.
--   **Comprehensive PRDs**: AI assists in ensuring all necessary components of a PRD are considered and drafted.
+-   **Thorough PRDs**: AI assists in ensuring all necessary components of a PRD are considered and drafted.
 
 ---
 

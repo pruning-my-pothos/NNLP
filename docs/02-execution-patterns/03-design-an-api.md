@@ -19,7 +19,7 @@ Use this pattern to leverage AI for designing clear, consistent, and well-struct
 
 Designing an API is a critical step in software development, dictating how different components or services communicate. AI can assist in translating high-level requirements into detailed API specifications, including defining resources, HTTP methods, data models, and authentication mechanisms, thereby accelerating development and reducing design flaws.
 
-**Goal**: Generate a comprehensive API design specification (e.g., OpenAPI, GraphQL schema) from functional requirements.
+**Goal**: Generate a thorough API design specification (e.g., OpenAPI, GraphQL schema) from functional requirements.
 **Anti-pattern**: Asking the AI to "create an API" without defining resources, actions, or expected data, leading to a generic and often unsuitable design.
 
 ---

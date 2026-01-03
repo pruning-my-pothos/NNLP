@@ -26,7 +26,7 @@ Users should always be aware that they are interacting with an AI system and und
 -   **AI Disclosure**: Clearly state that the user is interacting with an AI.
     -   *Guidance*: "You are chatting with an AI assistant."
 -   **Data Usage Disclosure**: Inform users about what data is collected, how it's used, and for what purpose (e.g., "Conversations may be reviewed to improve our services.").
-    -   *Guidance*: Link to a comprehensive privacy policy.
+    -   *Guidance*: Link to a thorough privacy policy.
 
 ---
 

@@ -156,7 +156,7 @@ Effect:
 
 Fix:
 
-- provide comprehensive context on dependencies
+- provide thorough context on dependencies
 
 ---
 

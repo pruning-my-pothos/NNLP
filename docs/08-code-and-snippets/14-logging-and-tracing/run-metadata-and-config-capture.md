@@ -14,7 +14,7 @@ last_reviewed: "2025-12-31"
 For robust LLM applications, logging extends beyond just prompts and responses. Capturing contextual metadata—such as the specific model used, its parameters, and application-level details—is crucial for debugging, auditing, comparing experiments, and ensuring reproducibility.
 
 :::info[The Goal: Full Context for Every LLM Call]
-The objective is to create comprehensive log entries that provide a complete picture of "who, what, when, and how" for each LLM interaction, enabling deeper analysis and easier troubleshooting.
+The objective is to create thorough log entries that provide a complete picture of "who, what, when, and how" for each LLM interaction, enabling deeper analysis and easier troubleshooting.
 :::
 
 ---
@@ -79,7 +79,7 @@ def log_llm_interaction_with_metadata(
     rag_context_meta: Optional[Dict[str, Any]] = None, # RAG specific details
 ):
     """
-    Logs a comprehensive, structured entry for an LLM interaction with rich metadata.
+    Logs a thorough, structured entry for an LLM interaction with rich metadata.
     """
     log_entry = {
         "event": "llm_interaction_full",

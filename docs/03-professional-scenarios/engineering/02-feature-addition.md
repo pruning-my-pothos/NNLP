@@ -84,7 +84,7 @@ graph TD
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **Ignoring Existing System Constraints** | Incompatible integrations, performance degradation, deployment failures. | Conduct thorough impact analysis; involve system architects early in design. |
 | **Insufficient Data for AI Model** | Poor AI feature performance, unreliable outputs. | Plan data collection and preparation carefully; use synthetic data or transfer learning if real data is scarce. |
-| **Lack of End-to-End Testing** | Bugs appear only after deployment, affecting user trust. | Implement comprehensive integration and system-level tests, including AI component validation. |
+| **Lack of End-to-End Testing** | Bugs appear only after deployment, affecting user trust. | Implement thorough integration and system-level tests, including AI component validation. |
 | **Overlooking User Experience Integration** | Confusing workflows, frustrated users, low feature adoption. | Involve UX designers early; conduct user testing with prototypes before full development. |
 | **Inadequate Monitoring for AI Performance** | Model drift, subtle failures go unnoticed in production. | Implement specific metrics and alerts for AI component performance and output quality. |
 

@@ -124,7 +124,7 @@ Critically review the AI-generated PRD.
 | Pitfall                   | Impact                                   | Correction                                     |
 | :------------------------ | :--------------------------------------- | :--------------------------------------------- |
 | **Over-reliance on AI for product strategy** | Generic PRDs lacking true user/business insight. | Humans define intent and high-level strategy; AI assists with structure and detail. |
-| **Ignoring business constraints** | AI proposes solutions that are too expensive or technically infeasible. | Comprehensive Constraint Specs are non-negotiable inputs. |
+| **Ignoring business constraints** | AI proposes solutions that are too expensive or technically infeasible. | Thorough Constraint Specs are non-negotiable inputs. |
 | **"Write me a PRD" syndrome** | AI generates a broad, unspecific document. | Break down PRD generation into smaller, spec-driven steps. |
 
 ---
