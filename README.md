@@ -59,7 +59,7 @@ Docs site: https://pruning-my-pothos.github.io/gen-ai-llm-docs/ (baseUrl: `/gen-
 
 ### Handbook at a glance
 
-| Section | What it covers | First link |
+| **Section** | **What it covers** | **First link** |
 | :-- | :-- | :-- |
 | Start Here | Orientation, scope, glossary, style, map | `/docs/00-handbook-introduction/site-map` |
 | Method | Loop, artifacts, delegation, evaluation | `/docs/01-handbook-method/01-overview` |
@@ -120,7 +120,7 @@ If you want to apply it now:
 
 ## Key paths (repo)
 
-| Path | Purpose |
+| **Path** | **Purpose** |
 | :-- | :-- |
 | `docs/00-handbook-introduction/` | Orientation, glossary, style, map |
 | `docs/01-handbook-method/` | Core loop, artifacts, delegation, evaluation |
@@ -202,6 +202,8 @@ This is an open-source project. I welcome contributions from:
 - **Anyone** working with LLMs in a professional capacity
 
 Join the discussion on GitHub and help me keep the GenAI & LLM Handbook sharp and useful.
+
+**Maintainer:** Shailesh Rawat (Shaily)
 
 ---
 
