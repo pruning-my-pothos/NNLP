@@ -14,7 +14,7 @@ tags:
 
 # GenAI & LLM Handbook: Nuanced Natural Language Programming
 
-This repository provides a practical handbook for building real software and documentation workflows using Generative AI and Large Language Models (LLMs). It treats language as a technical surface and requires professional fluency across:
+I maintain this repository as a practical handbook for building real software and documentation workflows using Generative AI and Large Language Models (LLMs). It treats language as a technical surface and requires professional fluency across:
 
 - **Logic**: Understanding cause-and-effect, conditions, and invariants.
 - **Language**: Using precise, unambiguous wording for instructions and constraints.
@@ -167,7 +167,7 @@ GenAI & LLM Handbook assumes:
 - Context and constraints are as important as the request itself.
 - Reliability comes from repeatable processes and evidence-based verification.
 
-You will know GenAI & LLM Handbook is working when:
+You'll know GenAI & LLM Handbook is working when:
 
 - AI-generated outputs consistently meet your quality bar.
 - Development cycle times are reduced without sacrificing correctness.
@@ -193,7 +193,7 @@ This handbook is opinionated and method-first: language as an executable spec, b
 
 ## Contribution & Community
 
-This is an open-source project. We welcome contributions from:
+This is an open-source project. I welcome contributions from:
 
 - **Engineers** building with GenAI
 - **Product Managers** defining AI-assisted products
@@ -201,7 +201,7 @@ This is an open-source project. We welcome contributions from:
 - **DevOps/Platform Engineers** automating with AI
 - **Anyone** working with LLMs in a professional capacity
 
-Join the discussion on GitHub and help us build the authoritative guide for practical GenAI & LLM Handbook!
+Join the discussion on GitHub and help me keep the GenAI & LLM Handbook sharp and useful.
 
 ---
 

@@ -1,6 +1,6 @@
 # Code of Conduct
 
-We are committed to a welcoming, respectful, and professional community for the GenAI & LLM Handbook.
+I’m committed to a welcoming, respectful, and professional community for the GenAI & LLM Handbook.
 
 ## Standards
 - Be respectful and constructive.
@@ -17,7 +17,7 @@ We are committed to a welcoming, respectful, and professional community for the 
 - Provide links, context, and any relevant details.
 
 ## Enforcement
-- Maintainers may take appropriate action, including warnings, issue/PR moderation, or removal from the community spaces.
+- I may take appropriate action, including warnings, issue/PR moderation, or removal from community spaces.
 
 ## Attribution
 - Inspired by the Contributor Covenant (v2.1) principles.

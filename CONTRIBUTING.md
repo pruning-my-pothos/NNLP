@@ -1,6 +1,6 @@
 # Contributing to the GenAI & LLM Handbook
 
-Thanks for helping improve the GenAI & LLM Handbook. This project emphasizes clear intent, small diffs, and evidence-backed changes.
+Thanks for helping improve the GenAI & LLM Handbook. I emphasize clear intent, small diffs, and evidence-backed changes.
 
 ## Ways to contribute
 - Fix or improve docs (clarity, accuracy, navigation).
